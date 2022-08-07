@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingTop="@dimen/padding_default" android:layout_width="match_parent" android:layout_height="match_parent">
-    <com.hy.frame.view.KeyValueView android:id="@+id/pwd_kvLoginPwdReset" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/user_reset_login_pwd" style="@style/settingsKvStyle"/>
-    <include layout="@layout/in_divider"/>
-    <com.hy.frame.view.KeyValueView android:id="@+id/pwd_kvCashReset" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/user_cash_pwd" style="@style/settingsKvStyle"/>
-</LinearLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/activity_agree_author_by_zm" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:src="@drawable/icon_binding_sesame"/>
-    <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="您点击“同意授权”按钮接受如下内容："/>
-    <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="1.将以下信息包括但不限于姓名、身份证号码和手机号码传递给芝麻信用，用于芝麻信用自行车或通过合作机构对你的身份信息进行校验；"/>
-    <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="2.可以向芝麻信用查询你的芝麻分和相关信用信息，用于评估其与你之间的交易或服务条件。"/>
-    <Button android:textColor="@color/white" android:id="@+id/btn_author" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="20dp" android:layout_marginTop="100dp" android:layout_marginRight="20dp" android:text="同意授权" style="@style/btnStyle_red"/>
-</LinearLayout>

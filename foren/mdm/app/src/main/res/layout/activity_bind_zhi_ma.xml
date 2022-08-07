@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/activity_bind_zhi_ma" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:src="@drawable/icon_binding_sesame"/>
-    <TextView android:textSize="14sp" android:textColor="@color/demand_more" android:paddingLeft="48dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="1.绑定芝麻信用后可提现，并让账户更安全"/>
-    <TextView android:textSize="14sp" android:textColor="@color/demand_more" android:paddingLeft="48dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="2.用户看到芝麻信用分后会对你更加信任"/>
-    <TextView android:textSize="14sp" android:textColor="@color/demand_more" android:paddingLeft="48dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="3.你发布的服务搜索排序时会更靠前"/>
-    <Button android:textColor="@color/white" android:id="@+id/btn_bind" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="20dp" android:layout_marginTop="100dp" android:layout_marginRight="20dp" android:text="@string/bind_atonce" style="@style/btnStyle_red"/>
-</LinearLayout>

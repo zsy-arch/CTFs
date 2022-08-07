@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:background="@color/theme" android:layout_width="match_parent" android:layout_height="@dimen/height_top_bar">
-    <ImageView android:id="@+id/top_imgHome" android:background="@mipmap/ico_home_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal"/>
-    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/theme_title" android:gravity="center" android:id="@+id/top_txtTitle" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/height_top_bar" android:text="标题" android:layout_weight="1"/>
-    <ImageView android:id="@+id/top_imgSearch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:src="@drawable/icon_easou"/>
-    <ImageView android:id="@+id/top_imgAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginRight="@dimen/margin_normal" android:src="@drawable/icon_add_white"/>
-</LinearLayout>

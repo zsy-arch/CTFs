@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/shape_btn_highlight" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <LinearLayout android:orientation="horizontal" android:id="@+id/circle_i_llyShareDetail" android:background="@color/gray_e" android:padding="@dimen/padding_normal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
-        <ImageView android:id="@+id/circles_i_share_imgCover" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true"/>
-        <TextView android:textColorHighlight="@color/blue" android:ellipsize="end" android:id="@+id/circles_i_share_txtContent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/padding_normal" android:maxLines="4"/>
-    </LinearLayout>
-    <LinearLayout android:orientation="vertical" android:id="@+id/circle_i_share_llyExt" android:layout_width="match_parent" android:layout_height="wrap_content"/>
-</LinearLayout>

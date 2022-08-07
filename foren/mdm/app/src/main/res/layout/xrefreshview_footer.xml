@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_horizontal" android:id="@+id/xrefreshview_footer_content" android:padding="10dp" android:layout_width="match_parent" android:layout_height="50dp">
-    <ProgressBar android:id="@+id/xrefreshview_footer_progressbar" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerHorizontal="true"/>
-    <TextView android:gravity="center" android:id="@+id/xrefreshview_footer_hint_textview" android:layout_width="match_parent" android:layout_height="50dp" android:text="加载完成" android:layout_centerHorizontal="true"/>
-    <TextView android:gravity="center" android:id="@+id/xrefreshview_footer_click_textview" android:layout_width="match_parent" android:layout_height="50dp" android:text="松开载入更多" android:layout_centerHorizontal="true"/>
-</RelativeLayout>

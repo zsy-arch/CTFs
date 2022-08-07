@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
-    <com.hy.frame.view.KeyValueView android:id="@+id/sharing_pay_kvRecord" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/records_transaction" app:kvValueRight="true" style="@style/settingsKvStyle"/>
-    <com.hy.frame.view.KeyValueView android:id="@+id/sharing_pay_kvManager" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" app:kvKey="@string/records_transaction_plat" app:kvValueRight="true" style="@style/settingsKvStyle"/>
-    <com.hy.frame.view.KeyValueView android:id="@+id/sharing_pay_kvApply" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" app:kvKey="@string/apply_record" app:kvValueRight="true" style="@style/settingsKvStyle"/>
-    <include layout="@layout/in_divider"/>
-    <com.hy.frame.view.KeyValueView android:id="@+id/sharing_pay_kvHelp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:kvKey="@string/sharing_title_help" app:kvValueRight="true" style="@style/settingsKvStyle"/>
-</LinearLayout>

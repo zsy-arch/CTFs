@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
-    <com.hy.frame.view.RefreshRecyclerView android:id="@+id/user_addr_recyclerView" android:background="@color/theme_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/user_addr_btnAdd"/>
-    <TextView android:textSize="20sp" android:gravity="center" android:id="@+id/addt_txtNoArea" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="没有地址，请添加地址"/>
-    <Button android:textColor="@color/white" android:gravity="center" android:id="@+id/user_addr_btnAdd" android:background="@color/btn_red" android:layout_width="match_parent" android:layout_height="@dimen/height_top_bar" android:text="@string/address_add" android:layout_alignParentBottom="true"/>
-</RelativeLayout>

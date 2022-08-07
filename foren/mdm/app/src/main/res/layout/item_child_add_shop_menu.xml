@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/item_child_add_shop_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <TextView android:id="@+id/tv_name_item_child" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_big" android:text="@string/classify_name" android:drawableLeft="@drawable/radio_red_selector" android:drawablePadding="@dimen/padding_default" android:layout_weight="1" style="@style/classify_title_style"/>
-    <ImageView android:id="@+id/iv_delete_item_child" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@mipmap/ico_txt_del"/>
-</LinearLayout>

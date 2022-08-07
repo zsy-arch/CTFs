@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/item_sharing_ll" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <TextView android:gravity="center_vertical" android:id="@+id/item_sharing_txt1" android:paddingLeft="10dp" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1.5"/>
-    <TextView android:gravity="center" android:id="@+id/item_sharing_txt2" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1"/>
-    <TextView android:gravity="center" android:id="@+id/item_sharing_txt3" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1"/>
-</LinearLayout>

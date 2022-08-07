@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
-    <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/edit_height" android:layout_marginTop="@dimen/margin_normal">
-        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:text="@string/remark" style="@style/txtDefaultStyle"/>
-        <EditText android:layout_gravity="center_vertical" android:id="@+id/et_remark" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:maxLength="12" android:layout_weight="1" style="@style/editStyle"/>
-        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_cancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_normal" android:src="@mipmap/edit_del"/>
-    </LinearLayout>
-    <Button android:textSize="@dimen/txt_default" android:textColor="@color/white" android:id="@+id/btn_save_remark" android:background="@drawable/btn_red_selector" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginTop="@dimen/lv_height" android:layout_marginRight="@dimen/margin_normal" android:text="@string/save"/>
-</LinearLayout>

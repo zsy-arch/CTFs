@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
-    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
-        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_manortree_bgm"/>
-        <ImageView android:layout_gravity="right" android:id="@+id/btn_no" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/icon_close_red"/>
-        <View android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/btn_yes" android:layout_width="300dp" android:layout_height="66dp" android:layout_marginBottom="40dp"/>
-        <TextView android:textSize="10sp" android:textColor="@color/calculator_white" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/btn_pact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:text="同意平台服务协议及种钱乐园协议与规则" android:drawableLeft="@drawable/ease_dx_checkbox_on"/>
-    </FrameLayout>
-</RelativeLayout>

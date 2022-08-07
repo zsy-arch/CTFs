@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:id="@+id/web_txtMenu" android:background="@drawable/item_selector" android:paddingLeft="@dimen/padding_big" android:paddingTop="@dimen/padding_default" android:paddingBottom="@dimen/padding_default" android:layout_width="match_parent" android:layout_height="wrap_content"/>

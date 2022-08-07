@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <com.vsf2f.f2f.ui.view.MyListview android:id="@+id/string_list" android:background="@color/white" android:layout_width="match_parent" android:layout_height="11dp"/>
-    <TextView android:textColor="@color/black" android:gravity="center" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/kv_height" android:layout_marginTop="10dp" android:text="@string/cancel"/>
-</LinearLayout>

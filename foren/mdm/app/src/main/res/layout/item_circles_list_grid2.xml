@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
-    <TextView android:textColor="@color/cancel_order_selector" android:gravity="center" android:id="@+id/circles_gdv_i_txtLabel" android:background="@drawable/grid_label_selector" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6dp" android:text="标签" android:singleLine="true"/>
-</LinearLayout>

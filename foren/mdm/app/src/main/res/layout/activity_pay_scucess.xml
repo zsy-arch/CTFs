@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_lanche_scucess" android:layout_width="match_parent" android:layout_height="match_parent">
-    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="62dp" android:src="@drawable/icon_pay_success" android:layout_centerHorizontal="true"/>
-    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_centerInParent="true">
-        <TextView android:textSize="16sp" android:textColor="@color/demand_super" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥"/>
-        <TextView android:textSize="36sp" android:textStyle="bold" android:textColor="@color/demand_super" android:id="@+id/pay_scucess_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00"/>
-    </LinearLayout>
-    <TextView android:textSize="14dp" android:textColor="@color/green" android:gravity="center" android:id="@+id/btn_finish" android:background="@drawable/btn_green_selector2" android:layout_width="220dp" android:layout_height="44dp" android:layout_marginBottom="100dp" android:text="@string/finish" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
-</RelativeLayout>

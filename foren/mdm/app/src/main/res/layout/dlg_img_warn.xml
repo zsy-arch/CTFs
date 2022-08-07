@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/ll_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
-    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_dlg" android:background="@drawable/btn_white_selector_top" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <ImageView android:id="@+id/iv_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/icon_ok"/>
-        <TextView android:textSize="16sp" android:textColor="@color/btn_green" android:gravity="center" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="成功"/>
-    </LinearLayout>
-    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_sure" android:background="@drawable/btn_red_selector_bottom" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="1px" android:text="完成"/>
-</LinearLayout>

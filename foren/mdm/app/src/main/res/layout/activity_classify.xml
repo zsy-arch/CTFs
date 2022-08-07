@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
-    <ExpandableListView android:id="@+id/listView_add_shop_menu" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_margin="@dimen/padding_default" android:divider="@null" android:layout_weight="1"/>
-    <LinearLayout android:background="@color/classify_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <Button android:textColor="@color/white" android:id="@+id/btn_add_group" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="@dimen/padding_default" android:text="@string/add" style="@style/publishBtnStyle"/>
-    </LinearLayout>
-</LinearLayout>

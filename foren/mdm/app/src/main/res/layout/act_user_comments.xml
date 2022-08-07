@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#f2f0eb" android:layout_width="match_parent" android:layout_height="match_parent">
-    <com.hy.frame.view.NavGroup android:orientation="horizontal" android:id="@+id/main_groupFooter" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="3dp" android:layout_marginBottom="3dp">
-        <com.hy.frame.view.NavView android:id="@+id/nv_1" android:tag="0" android:background="@drawable/btn_underline_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:navHorizontal="true" app:navChecked="true" app:navText="我收到的评价" app:navCenter="true"/>
-        <View android:background="@color/divider_gray" android:layout_width="1px" android:layout_height="60dp"/>
-        <com.hy.frame.view.NavView android:id="@+id/nv_2" android:tag="1" android:background="@drawable/btn_underline_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:navHorizontal="true" app:navText="我发出的评价" app:navCenter="true"/>
-    </com.hy.frame.view.NavGroup>
-    <ListView android:id="@+id/list" android:background="@android:color/transparent" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:divider="@color/divider_list" android:dividerHeight="5dp" android:fastScrollEnabled="false"/>
-</LinearLayout>

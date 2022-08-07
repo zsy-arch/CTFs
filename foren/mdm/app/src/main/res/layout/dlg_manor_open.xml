@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
-    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
-        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_openmanor_bgm"/>
-        <View android:layout_gravity="bottom" android:id="@+id/btn_stop" android:layout_width="300dp" android:layout_height="55dp" android:layout_marginBottom="33dp"/>
-        <TextView android:textSize="10sp" android:textColor="@color/black" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="同意平台服务协议及种钱乐园协议与规则" android:drawableLeft="@drawable/ease_dx_checkbox_on"/>
-    </FrameLayout>
-</RelativeLayout>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/launch_rlyWelcome" android:layout_width="match_parent" android:layout_height="match_parent">
-    <ImageView android:background="@drawable/img_wel_adv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
-    <FrameLayout android:id="@+id/launch_txtSkip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_alignParentRight="true">
-        <ImageView android:background="@drawable/shape_line_gray_5" android:layout_width="60dp" android:layout_height="40dp" android:alpha="0.2"/>
-        <TextView android:textColor="@color/calculator_white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="跳过"/>
-    </FrameLayout>
-</RelativeLayout>

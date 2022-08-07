@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_demand_oprate" android:background="@drawable/bgm_popup" android:layout_width="111dp" android:layout_height="wrap_content">
-    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
-        <TextView android:textColor="@color/txt_black" android:gravity="center_vertical" android:id="@+id/tv_entrust" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/entrust_money" android:drawableLeft="@drawable/icon_trusteeship" android:drawablePadding="@dimen/padding_normal"/>
-        <TextView android:textColor="@color/txt_black" android:gravity="center_vertical" android:id="@+id/tv_reprice" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="@string/reprice" android:drawableLeft="@drawable/icon_revised_price" android:drawablePadding="@dimen/padding_normal"/>
-        <TextView android:textColor="@color/txt_black" android:gravity="center_vertical" android:id="@+id/tv_complete" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="@string/complete_demand" android:drawableLeft="@drawable/icon_organizing_data" android:drawablePadding="@dimen/padding_normal"/>
-        <TextView android:textColor="@color/txt_black" android:gravity="center_vertical" android:id="@+id/tv_close" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="@string/close_demand" android:drawableLeft="@drawable/icon_shutdown" android:drawablePadding="@dimen/padding_normal"/>
-    </LinearLayout>
-</LinearLayout>
