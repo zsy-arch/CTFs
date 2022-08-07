@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_parent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textStyle="bold" android:id="@+id/user_needs_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="标题" android:layout_weight="1"/>
+        <com.cdlinglu.server.audio.MusicPlayer android:id="@+id/user_needs_play" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.hy.frame.view.MyGridView android:id="@+id/user_needs_mgv" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="3dp" android:verticalSpacing="3dp" android:numColumns="4"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@+id/user_needs_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="线下服务:"/>
+        <TextView android:textColor="@color/txt_red_finace" android:id="@+id/user_needs_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100元"/>
+        <TextView android:textSize="12sp" android:id="@+id/user_needs_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/次"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <TextView android:textSize="11dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/user_needs_btn" android:background="@drawable/icon_demand_immediately" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我要约他"/>
+    </LinearLayout>
+    <LinearLayout android:background="@color/gray_f" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:ellipsize="end" android:id="@+id/user_needs_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="111" android:maxLines="2"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/gray_b" android:id="@+id/user_needs_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1分钟前"/>
+        <View android:layout_width="0dp" android:layout_height="1px" android:layout_weight="1"/>
+        <TextView android:textColor="@color/gray_b" android:id="@+id/user_needs_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1km" android:drawableLeft="@drawable/icon_position"/>
+    </LinearLayout>
+</LinearLayout>

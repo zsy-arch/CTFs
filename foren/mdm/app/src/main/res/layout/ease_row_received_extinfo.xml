@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:layout_gravity="center" android:id="@+id/timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/chat_text_date_style"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_chat_activity">
+        <com.hy.frame.view.RotundityImageView android:layout_width="@dimen/size_avatar" android:layout_height="@dimen/size_avatar" android:layout_marginLeft="@dimen/margin_chat_activity" android:src="@mipmap/def_head2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        <com.hy.frame.view.RotundityImageView android:id="@+id/iv_userhead" android:layout_width="@dimen/size_avatar" android:layout_height="@dimen/size_avatar" android:layout_marginLeft="@dimen/margin_chat_activity" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        <RelativeLayout android:id="@+id/bubble" android:background="@drawable/ease_chatfrom_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_chat_activity" android:layout_marginRight="@dimen/margin_chat_big" android:layout_toRightOf="@+id/iv_userhead" android:layout_below="@+id/tv_userid">
+            <TextView android:textSize="15sp" android:textColor="@color/black" android:gravity="left|center_vertical|center_horizontal|center" android:autoLink="web" android:id="@+id/tv_chatcontent" android:paddingLeft="10dp" android:paddingRight="10dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/chat_msg_max_width" android:minHeight="35dp" android:lineSpacingExtra="2dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/text_llyOrder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/chat_msg_max_width" android:layout_below="@+id/tv_chatcontent">
+                <include layout="@layout/in_divider"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="left|center_vertical|center_horizontal|center" android:autoLink="web" android:paddingLeft="6dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100dp" android:minHeight="25dp" android:text="订单编号：" android:lineSpacingExtra="2dp"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/blue" android:gravity="left|center_vertical|center_horizontal|center" android:autoLink="web" android:id="@+id/tv_order_no" android:paddingLeft="6dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160dp" android:lineSpacingExtra="2dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="left|center_vertical|center_horizontal|center" android:autoLink="web" android:paddingLeft="6dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100dp" android:minHeight="25dp" android:text="下单时间：" android:lineSpacingExtra="2dp"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_normal" android:gravity="left|center_vertical|center_horizontal|center" android:autoLink="web" android:id="@+id/tv_order_time" android:paddingLeft="6dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/chat_msg_max_width" android:minHeight="20dp" android:lineSpacingExtra="2dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="left|center_vertical|center_horizontal|center" android:autoLink="web" android:paddingLeft="6dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100dp" android:minHeight="25dp" android:text="商品详情：" android:lineSpacingExtra="2dp"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/blue" android:gravity="left|center_vertical|center_horizontal|center" android:autoLink="web" android:id="@+id/tv_order_products" android:paddingLeft="6dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160dp" android:maxLines="2" android:lineSpacingExtra="2dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="left|center_vertical|center_horizontal|center" android:autoLink="web" android:paddingLeft="6dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="100dp" android:minHeight="25dp" android:text="订单金额：" android:lineSpacingExtra="2dp"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/blue" android:gravity="left|center_vertical|center_horizontal|center" android:autoLink="web" android:id="@+id/tv_order_price" android:paddingLeft="6dp" android:paddingRight="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="160dp" android:lineSpacingExtra="2dp"/>
+                </LinearLayout>
+                <include layout="@layout/in_divider"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+                    <TextView android:textSize="14sp" android:textColor="@color/blue" android:gravity="center_vertical" android:paddingLeft="6dp" android:paddingRight="1dp" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="35dp" android:text="详情" android:layout_weight="1" android:lineSpacingExtra="2dp"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_next"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/text_llyGood" android:visibility="gone" android:layout_width="250dp" android:layout_height="wrap_content" android:minWidth="@dimen/chat_msg_max_width" android:layout_below="@+id/tv_chatcontent">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/text_imgGoodpic" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="@dimen/padding_default" android:src="@drawable/img_empty"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_default">
+                        <TextView android:textSize="@dimen/txt_small" android:id="@+id/text_txtGoodname" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品名称" android:lines="2"/>
+                        <TextView android:textSize="@dimen/txt_small" android:textColor="@color/txt_red_finace" android:id="@+id/text_txtGoodprice" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥ 0.00" android:singleLine="true"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/text_llyGame" android:visibility="gone" android:layout_width="250dp" android:layout_height="wrap_content" android:minWidth="@dimen/chat_msg_max_width" android:layout_below="@+id/tv_chatcontent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13sp" android:textColor="@color/black" android:id="@+id/text_txtGameTitle" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_title" android:lines="2"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_default">
+                        <TextView android:textSize="11sp" android:textColor="@color/gray_b" android:id="@+id/text_txtGameDesc" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/game_desc" android:layout_weight="1"/>
+                        <ImageView android:id="@+id/text_imgGamepic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_default" android:src="@drawable/icon_tree_chat"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/text_llyNeed" android:padding="5dp" android:visibility="gone" android:layout_width="250dp" android:layout_height="wrap_content" android:layout_below="@+id/tv_chatcontent">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:ellipsize="end" android:id="@+id/text_txtNeedtitle" android:padding="3dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="需求名称" android:singleLine="true" android:layout_weight="1"/>
+                        <com.cdlinglu.server.audio.MusicPlayer android:id="@+id/voicePlayer" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/txt_small" android:textColor="@color/gray_b" android:ellipsize="end" android:id="@+id/text_txtNeeddesc" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="需求详情" android:maxLines="2"/>
+                    <LinearLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/txt_small" android:textColor="@color/btn_yellow" android:id="@+id/text_txtNeedprice" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" android:singleLine="true"/>
+                        <TextView android:textSize="10sp" android:textColor="@color/gray_a" android:id="@+id/text_txtNeedunit" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/ 小时" android:singleLine="true"/>
+                        <TextView android:textSize="@dimen/txt_small" android:textColor="@color/holo_red_light" android:gravity="center" android:id="@+id/text_txtNeedmode" android:padding="3dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="线上服务" android:singleLine="true" android:layout_weight="1"/>
+                        <TextView android:textSize="@dimen/txt_small" android:textColor="@color/white" android:gravity="center" android:id="@+id/text_txtNeedbtn" android:background="@drawable/bgm_btn_selector" android:padding="3dp" android:layout_width="44dp" android:layout_height="22dp" android:text="抢单" android:singleLine="true"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="5dp">
+                        <ImageView android:id="@+id/text_imgNeedaddr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_address_selector"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/txt_red_finace" android:ellipsize="end" android:id="@+id/text_txtNeedaddr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="地址" android:singleLine="true"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/text_llyCard" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/chat_msg_big_width" android:layout_below="@+id/tv_chatcontent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/text_imgAvatar" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="@dimen/padding_default" android:src="@mipmap/def_head"/>
+                    <TextView android:textSize="@dimen/txt_small" android:id="@+id/text_txtNickname" android:padding="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_default" android:singleLine="true" android:layout_toRightOf="@+id/text_imgAvatar"/>
+                    <TextView android:textSize="@dimen/txt_smaller" android:textColor="@color/gray_b" android:id="@+id/text_txtUsername" android:padding="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toRightOf="@+id/text_imgAvatar" android:layout_below="@+id/text_txtNickname"/>
+                </RelativeLayout>
+                <include layout="@layout/in_divider"/>
+                <TextView android:textSize="@dimen/txt_smaller" android:textColor="@color/gray_c" android:padding="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="个人名片"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/chat_nick_text_size" android:id="@+id/tv_userid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chat_nick_margin_left" android:layout_toRightOf="@+id/iv_userhead" style="@style/chat_text_name_style"/>
+    </RelativeLayout>
+</LinearLayout>

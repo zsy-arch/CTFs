@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.em.widget.ContactItemView android:id="@+id/contacts_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" app:contactItemImage="@drawable/icon_friend_head_phone" app:contactItemName="@string/cell_contacts"/>
+    <ListView android:id="@+id/list" android:background="@android:color/transparent" android:scrollbars="vertical" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:cacheColorHint="#00000000"/>
+</LinearLayout>

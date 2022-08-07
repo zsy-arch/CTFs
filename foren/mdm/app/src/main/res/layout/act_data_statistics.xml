@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/btn_red_selector_solid" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_default">
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/data_txtYesterday" android:background="@drawable/btn_red_selector" android:layout_width="0dp" android:layout_height="30dp" android:text="@string/data_statistics_yesterday" android:layout_weight="1"/>
+        <TextView android:textColor="@color/txt_red" android:gravity="center" android:id="@+id/data_txt7days" android:layout_width="0dp" android:layout_height="30dp" android:text="@string/data_statistics_7days" android:layout_weight="1"/>
+        <TextView android:textColor="@color/txt_red" android:gravity="center" android:id="@+id/data_txt30days" android:layout_width="0dp" android:layout_height="30dp" android:text="@string/data_statistics_30days" android:layout_weight="1"/>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/fragment_contacts" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

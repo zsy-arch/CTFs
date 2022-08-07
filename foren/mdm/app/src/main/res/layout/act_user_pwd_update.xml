@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/edit_height" android:layout_marginTop="@dimen/margin_normal">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:text="@string/user_old_pwd" style="@style/txtDefaultStyle"/>
+        <EditText android:layout_gravity="center_vertical" android:id="@+id/pwd_update_editOldPwd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_tab_height" android:hint="@string/user_old_pwd_hint" android:digits="@string/digits_password" style="@style/editPwdStyle"/>
+    </FrameLayout>
+    <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/edit_height" android:layout_marginTop="@dimen/margin_normal">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:text="@string/user_new_pwd" style="@style/txtDefaultStyle"/>
+        <EditText android:layout_gravity="center_vertical" android:id="@+id/pwd_update_editNewPwd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_tab_height" android:hint="@string/user_new_pwd_hint" android:digits="@string/digits_password" style="@style/editPwdStyle"/>
+    </FrameLayout>
+    <include layout="@layout/in_divider"/>
+    <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/edit_height">
+        <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:text="@string/user_again_pwd" style="@style/txtDefaultStyle"/>
+        <EditText android:layout_gravity="center_vertical" android:id="@+id/pwd_update_editAgainPwd" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/im_tab_height" android:hint="@string/user_new_pwd_again_hint" android:digits="@string/digits_password" style="@style/editPwdStyle"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/txt_small" android:textColor="@color/red" android:id="@+id/txt_longtxtpwd" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:layout_weight="1"/>
+        <TextView android:layout_gravity="right" android:id="@+id/pwd_update_txtForget" android:paddingTop="10dp" android:layout_width="70dp" android:layout_height="30dp" android:text="忘记密码？" style="@style/txtSmallStyle"/>
+    </LinearLayout>
+</LinearLayout>

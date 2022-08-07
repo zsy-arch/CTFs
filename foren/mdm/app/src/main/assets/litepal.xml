@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="f2f_circle"/>
+
+    <version value="4"/>
+    <list>
+        <mapping class="com.vsf2f.f2f.bean.DBCircleListBean"/>
+        <mapping class="com.vsf2f.f2f.bean.DBCircleDraftBean"/>
+    </list>
+</litepal>  

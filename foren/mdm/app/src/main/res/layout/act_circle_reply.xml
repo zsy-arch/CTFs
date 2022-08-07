@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/activity_start_service" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <EditText android:textSize="16sp" android:textColor="@color/gray_a" android:gravity="top" android:id="@+id/et_reply" android:background="@color/white" android:paddingLeft="10dp" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100dp" android:maxLength="500"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/lly_shareContent" android:background="@color/gray_e" android:padding="3dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:minHeight="100dp">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/img_sharePic" android:visibility="gone" android:layout_width="95dp" android:layout_height="95dp" android:src="@drawable/img_empty" android:scaleType="centerCrop"/>
+                        <TextView android:textColor="@color/gray_a" android:id="@+id/txt_shareContent" android:padding="12dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="转发内容"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/lly_shareExt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <TextView android:gravity="center_vertical" android:id="@+id/txt_sameTime" android:background="@color/gray_e" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="43dp" android:text="同时转发" android:drawableLeft="@drawable/checkbox_selector" android:drawablePadding="5dp"/>
+</LinearLayout>

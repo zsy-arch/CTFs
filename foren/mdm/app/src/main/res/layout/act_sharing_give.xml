@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/sharing_give_page1" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="@dimen/nv_height" android:layout_marginTop="@dimen/margin_normal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="对方账户"/>
+            <EditText android:layout_gravity="center_vertical" android:id="@+id/dona_etPhone" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="输入对方手机号或账号" android:digits="@string/digits_numeric" android:layout_weight="1" android:inputType="numberDecimal" style="@style/editStyle"/>
+            <ImageView android:id="@+id/dona_ivPhone" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_phone_contact"/>
+        </LinearLayout>
+        <TextView android:textSize="10dp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginTop="@dimen/margin_normal" android:text="共享宝将实时转入对方共享宝账户"/>
+        <View android:layout_width="wrap_content" android:layout_height="30dp"/>
+        <TextView android:enabled="false" android:textSize="15dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/dona_tvCommit" android:background="@drawable/btn_red2_selector" android:layout_width="match_parent" android:layout_height="44dp" android:layout_margin="12dp" android:text="下一步"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/sharing_give_page2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+                <com.hy.frame.view.RoundImageView android:id="@+id/dona_ivAvatar" android:layout_width="44dp" android:layout_height="44dp" android:src="@mipmap/def_head2"/>
+                <TextView android:id="@+id/dona_tvNickname" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:id="@+id/dona_tvUsername" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="15sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="转赠数量"/>
+            <EditText android:textColorHighlight="@color/green" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/dona_etNum" android:background="@null" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="50dp" android:hint="请输入转赠数量,最多可转赠0个" android:maxLength="7" android:inputType="number"/>
+        </LinearLayout>
+        <Button android:textColor="@color/white" android:id="@+id/dona_btnCommit" android:background="@drawable/btn_red_selector" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="10dp" android:layout_marginTop="40dp" android:layout_marginRight="10dp" android:text="立即转赠"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/item_circle_ext_demand" android:background="@drawable/bgm_circle_item_demand" android:layout_width="300dp" android:layout_height="wrap_content">
+        <LinearLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/item_circle_needs_pic" android:background="@color/calculator_white" android:layout_width="98dp" android:layout_height="98dp" android:src="@mipmap/img_no_pic" android:scaleType="centerCrop"/>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+                <TextView android:textColor="@color/txt_red_finace" android:id="@+id/item_circle_needs_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="标题" android:maxLines="2"/>
+                <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="center_vertical" android:id="@+id/item_circle_needs_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="描述" android:lines="2"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/txt_red_finace" android:id="@+id/item_circle_needs_price" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100元"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_a" android:id="@+id/item_circle_needs_unit" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/次"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_a" android:id="@+id/item_circle_needs_mode" android:paddingTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="线下服务"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

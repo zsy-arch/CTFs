@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/edit_height">
+        <ImageView android:id="@+id/bind_imgPhone" android:padding="@dimen/key_value" android:layout_width="@dimen/edit_height" android:layout_height="match_parent" android:layout_marginLeft="@dimen/padding_normal" android:layout_marginRight="@dimen/key_value" android:src="@mipmap/icon_phone"/>
+        <EditText android:textColorHighlight="@color/blue" android:layout_gravity="center_vertical" android:id="@+id/bind_editPhone" android:layout_width="match_parent" android:layout_height="@dimen/edit_height" android:hint="@string/phone_hint" android:layout_toRightOf="@+id/bind_imgPhone" style="@style/editPhoneStyle"/>
+        <TextView android:textSize="@dimen/txt_small" android:gravity="center" android:id="@+id/bind_txtCountryCode" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="86" android:layout_toLeftOf="@+id/bind_editPhone"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/edit_height" android:layout_marginTop="@dimen/margin_normal">
+        <ImageView android:gravity="center" android:padding="@dimen/key_value" android:layout_width="@dimen/edit_height" android:layout_height="match_parent" android:layout_marginLeft="@dimen/padding_normal" android:layout_marginRight="@dimen/key_value" android:src="@mipmap/icon_code"/>
+        <EditText android:layout_gravity="center_vertical" android:id="@+id/bind_editCode" android:layout_width="0dp" android:layout_height="@dimen/edit_height" android:hint="@string/code_hint" android:layout_weight="1" style="@style/editCodePStyle"/>
+        <com.hy.frame.view.TimerButton android:textColor="@color/white" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/bind_btnGetCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_normal" android:text="@string/code_get" android:hint="@string/code_get_hint" style="@style/btnCodeStyle"/>
+    </LinearLayout>
+</LinearLayout>

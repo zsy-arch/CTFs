@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/dark_pink" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.5">
+        <com.hy.frame.view.RotundityImageView android:layout_gravity="center" android:id="@+id/mine_imgHead" android:layout_width="@dimen/mine_head_width" android:layout_height="@dimen/mine_head_width" android:layout_margin="@dimen/margin_default" android:src="@mipmap/def_head"/>
+        <TextView android:textSize="@dimen/txt_big" android:id="@+id/txt_upName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/no_set" android:layout_toRightOf="@+id/mine_imgHead" android:layout_alignTop="@+id/mine_imgHead" android:layout_toEndOf="@+id/mine_imgHead"/>
+        <TextView android:textSize="@dimen/txt_medium" android:id="@+id/txt_upLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/vip_level" android:layout_toRightOf="@+id/mine_imgHead" android:layout_below="@+id/txt_upName" android:layout_toEndOf="@+id/mine_imgHead"/>
+        <TextView android:textSize="@dimen/txt_medium" android:textColor="@color/white" android:id="@+id/txt_upVIP" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_set" android:layout_toRightOf="@+id/txt_upLevel" android:layout_alignBaseline="@+id/txt_upLevel" android:layout_alignBottom="@+id/txt_upLevel" android:layout_toEndOf="@+id/txt_upLevel"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/pink" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="6"/>
+    <TextView android:textSize="@dimen/txt_big" android:gravity="center" android:id="@+id/txt_addDates" android:background="@color/dark_pink" android:layout_width="match_parent" android:layout_height="0dp" android:text="今日总成长1.7天" android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_default">
+        <EditText android:textColorHint="#666666" android:id="@+id/send_editText" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/margin_normal" android:text="我是" android:hint="说点什么吧！" android:maxLength="20" android:inputType="text" style="@style/editStyle"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/txt_small" android:textColor="@color/red" android:gravity="center" android:id="@+id/send_txtPrompt" android:paddingTop="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginRight="@dimen/margin_normal" android:lineSpacingExtra="2dp"/>
+    <RelativeLayout android:id="@+id/send_rlyShowName" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="14sp" android:typeface="serif" android:textColor="@android:color/black" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="展示我的真实姓名" android:layout_centerVertical="true"/>
+        <com.easeui.widget.EaseSwitchButton android:id="@+id/switch_sbShowName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

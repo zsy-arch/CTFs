@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/sharing_main_llRecord" android:background="@color/gray_a" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="35dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_sharing_notice"/>
+                <ViewFlipper android:id="@+id/viewflipper" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="5dp">
+                    <TextView android:textSize="12sp" android:textColor="@color/holo_red2" android:gravity="center_vertical" android:id="@android:id/text1" android:layout_width="match_parent" android:layout_height="match_parent" android:text=""/>
+                    <TextView android:textSize="12sp" android:textColor="@color/holo_red2" android:gravity="center_vertical" android:id="@android:id/text2" android:layout_width="match_parent" android:layout_height="match_parent" android:text=""/>
+                </ViewFlipper>
+            </LinearLayout>
+            <LinearLayout android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginBottom="1px">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="12dp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拥有:"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/black_deep" android:id="@+id/sharing_main_tvSharing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="0"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="个"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="12dp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可用:"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/black_deep" android:id="@+id/sharing_main_tvEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="0"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="个"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/sharing_main_llThaw" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="12dp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="冻结："/>
+                    <TextView android:textSize="12dp" android:textColor="@color/blue" android:id="@+id/sharing_main_tvFrozen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="0"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="个"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="增长值"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                    <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/sharing_main_tvWorth" android:background="@drawable/bgm_sharing_main_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/txt_red_finace" android:id="@+id/sharing_tvIncrement" android:padding="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总价值:" android:drawablePadding="6dp"/>
+                    <TextView android:textColor="@color/txt_red_finace" android:id="@+id/sharing_main_tvAssets" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="0"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+                    <TextView android:textSize="16sp" android:textColor="@color/red" android:gravity="center" android:id="@+id/sharing_main_btnGive" android:background="@drawable/btn_red_selector_solid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="转赠" style="@style/btnSmallStyle"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/red" android:gravity="center" android:id="@+id/sharing_main_btnSell" android:background="@drawable/btn_red_selector_solid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="出让" style="@style/btnSmallStyle"/>
+                    <TextView android:textSize="16sp" android:textColor="@color/red" android:gravity="center" android:id="@+id/sharing_main_btnBuy" android:background="@drawable/btn_red_selector_solid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="收购" style="@style/btnSmallStyle"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="center" android:padding="6dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="共享宝=推广积分=代理分红权\10你的分红=你的共享宝/总的共享宝*平台收益" android:lineSpacingExtra="5dp"/>
+            <TextView android:gravity="center" android:id="@+id/sharing_btnShowList" android:background="@color/white" android:padding="6dp" android:layout_width="match_parent" android:layout_height="50dp" android:text="增长明细" android:drawableBottom="@drawable/content_icon_arrow"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/sharing_main_llList" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1px">
+                    <TextView android:gravity="center" android:layout_width="0dp" android:layout_height="40dp" android:text="类别" android:layout_weight="1.5"/>
+                    <TextView android:gravity="center" android:layout_width="0dp" android:layout_height="40dp" android:text="前天" android:layout_weight="1"/>
+                    <TextView android:gravity="center" android:layout_width="0dp" android:layout_height="40dp" android:text="昨天" android:layout_weight="1"/>
+                </LinearLayout>
+                <com.vsf2f.f2f.ui.view.MyListview android:id="@+id/sharing_main_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

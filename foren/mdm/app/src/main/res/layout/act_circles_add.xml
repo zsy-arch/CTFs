@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/bgm_circle_add" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/txt_circle_add"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15sp" android:textColor="@color/calculator_white" android:gravity="center" android:id="@+id/circles_add_txtText" android:layout_width="0dp" android:layout_height="wrap_content" android:text="文字" android:drawableTop="@drawable/icon_circle_addtxt" android:drawablePadding="10dp" android:layout_weight="1"/>
+            <TextView android:textSize="15sp" android:textColor="@color/calculator_white" android:gravity="center" android:id="@+id/circles_add_txtPic" android:layout_width="0dp" android:layout_height="wrap_content" android:text="图片" android:drawableTop="@drawable/icon_circle_addpic" android:drawablePadding="10dp" android:layout_weight="1"/>
+            <TextView android:textSize="15sp" android:textColor="@color/calculator_white" android:gravity="center" android:id="@+id/circles_add_txtVideo" android:layout_width="0dp" android:layout_height="wrap_content" android:text="视频" android:drawableTop="@drawable/icon_circle_addvideo" android:drawablePadding="10dp" android:layout_weight="1"/>
+            <TextView android:textSize="15sp" android:textColor="@color/calculator_white" android:gravity="center" android:id="@+id/circles_add_txtArt" android:layout_width="0dp" android:layout_height="wrap_content" android:text="文章" android:drawableTop="@drawable/icon_circle_addart" android:drawablePadding="10dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

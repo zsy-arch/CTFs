@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_identy_real" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/page3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="营业执照注册号" android:layout_weight="1"/>
+            <EditText android:textColor="@color/gray_a" android:textColorHint="@color/gray_c" android:gravity="center_vertical" android:id="@+id/ed_busNum" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="填写营业执照注册号" android:lines="1" android:layout_weight="2.2"/>
+        </LinearLayout>
+        <include layout="@layout/in_divider"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="经营范围" android:layout_weight="1"/>
+            <TextView android:textColor="@color/gray_a" android:textColorHint="@color/gray_c" android:gravity="center_vertical" android:id="@+id/tv_busarea" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="填写经营范围" android:lines="1" android:layout_weight="2.2"/>
+        </LinearLayout>
+        <include layout="@layout/in_divider"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="执照期限" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="@color/gray_a" android:textColorHint="@color/gray_c" android:gravity="center_vertical" android:id="@+id/tv_busdate" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="请填写执照到期时间" android:layout_weight="2.2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="10dp">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="上传营业执照照片" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1px">
+            <TextView android:textSize="12sp" android:textColor="@color/txt_red_finace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请确保上传的执照照片真实有效，否则后果自负."/>
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_license" android:layout_width="260dp" android:layout_height="165dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:src="@drawable/icon_identify_license"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:text="1.上传公司营业执照正面，确保所有信息清晰可见\102.确保营业执照上的“公司全称”，与您个人信息中的公司全称一致。"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

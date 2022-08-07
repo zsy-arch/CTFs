@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/bg" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:id="@+id/status_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="24dp" android:layout_marginRight="20dp" android:layout_marginBottom="40dp" android:text="正在加载，请稍后..." android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/error_pic" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_error_face" android:layout_above="@+id/status_tip" android:layout_centerInParent="true" android:foregroundGravity="center_horizontal"/>
+    <ProgressBar android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/status_tip" android:layout_centerInParent="true" android:foregroundGravity="center_horizontal" style="?android:attr/progressBarStyle"/>
+</RelativeLayout>

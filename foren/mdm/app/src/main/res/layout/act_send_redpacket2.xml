@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/activity_start_service" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/red_packet_page1" android:background="@color/red_packet_bgm" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.hy.frame.view.NavGroup android:id="@+id/red_packet_grouptype" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.hy.frame.view.NavView android:id="@+id/nv_type1" android:tag="0" android:background="@drawable/btn_underline_selector" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1" app:navChecked="true" app:navText="拼手气红包" app:navTextColor="@color/tab_item_selector" app:navCenter="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_circles_divider_vertical"/>
+            <com.hy.frame.view.NavView android:id="@+id/nv_type2" android:tag="1" android:background="@drawable/btn_underline_selector" android:layout_width="0dp" android:layout_height="50dp" android:layout_weight="1" app:navText="普通红包" app:navTextColor="@color/tab_item_selector" app:navCenter="true"/>
+        </com.hy.frame.view.NavGroup>
+        <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="center" android:id="@+id/tv_prompt_fight" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="拼手气红包,每人抢到的红包金额随机不等"/>
+        <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="红包个数"/>
+            <EditText android:textSize="14sp" android:textColor="@color/demand_super" android:textColorHint="@color/gray_c" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_num" android:background="@null" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="44dp" android:hint="填写个数" android:lines="1" android:maxLength="3" android:layout_weight="1" android:inputType="number"/>
+            <TextView android:id="@+id/imb_qrcode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="个"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:id="@+id/tv_prompt_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:text=""/>
+        <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:id="@+id/tv_money" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="总金额"/>
+            <EditText android:textSize="14sp" android:textColor="@color/demand_super" android:textColorHint="@color/gray_c" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_money" android:background="@null" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="44dp" android:hint="填写金额" android:lines="1" android:layout_weight="1" android:inputType="numberDecimal"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="@string/money"/>
+        </LinearLayout>
+        <EditText android:textSize="16sp" android:textColor="@color/demand_super" android:textColorHint="@color/gray_c" android:gravity="top" android:id="@+id/et_content" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:hint="@string/red_packet_greeting" android:maxLines="3" android:lines="3" android:maxLength="25" android:inputType="textMultiLine"/>
+        <TextView android:textSize="11sp" android:textColor="@color/gray_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="最多25个字"/>
+        <LinearLayout android:layout_gravity="center" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥"/>
+            <TextView android:textSize="18sp" android:id="@+id/txt_cost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00"/>
+        </LinearLayout>
+        <TextView android:enabled="false" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_ensure" android:background="@drawable/btn_red_selector" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/margin_normal" android:text="@string/send_redpacket"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/red_packet_page2" android:background="#fff1ea" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="红包金额"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="@color/gray_a" android:id="@+id/red_pay_txtMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:background="@color/white" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+            <TextView android:textColor="@color/gray_a" android:layout_width="0dp" android:layout_height="wrap_content" android:text="需支付金额:" android:layout_weight="1"/>
+            <TextView android:textColor="@color/gray_a" android:id="@+id/red_pay_txtMoney2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元"/>
+        </LinearLayout>
+        <include layout="@layout/in_divider"/>
+        <LinearLayout android:background="@color/white" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textColor="@color/blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="钱包余额支付"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <TextView android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可用余额："/>
+                    <TextView android:textStyle="bold" android:textColor="@color/gray_a" android:id="@+id/red_pay_txtMoney3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                </LinearLayout>
+                <TextView android:id="@+id/red_pay_recharge" android:background="@drawable/btn_yellow_selector" android:paddingLeft="8dp" android:paddingTop="3dp" android:paddingRight="8dp" android:paddingBottom="3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="66dp" android:layout_marginTop="5dp" android:text="去充值"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/checkbox_identycom_selector"/>
+        </LinearLayout>
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_pay" android:background="@drawable/btn_red_selector" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="40dp" android:layout_marginRight="20dp" android:text="确认支付"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/red_packet_page3" android:background="@color/white" android:padding="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_red_success"/>
+        <TextView android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付成功"/>
+        <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:text="红包"/>
+        <LinearLayout android:gravity="top" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="18sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥"/>
+            <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="@color/gray_a" android:id="@+id/red_pay_txtMoney4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00"/>
+        </LinearLayout>
+        <TextView android:textColor="@color/gray_c" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="等待对方领取红包"/>
+        <TextView android:textColor="@color/red" android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_finish" android:background="@drawable/shape_line_red_5" android:layout_width="160dp" android:layout_height="35dp" android:layout_marginTop="140dp" android:text="完成"/>
+    </LinearLayout>
+</FrameLayout>

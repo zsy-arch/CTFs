@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/activity_comment_success" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:src="@drawable/icon_demand_paysuccess"/>
+        <TextView android:textSize="18sp" android:textColor="@color/btn_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_success"/>
+        <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="30dp" android:text="保证金只是为了双方能够更好的服务对方\10保障双方利益，避免不必要的纠纷！"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="@color/btn_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付金额：" android:drawableLeft="@drawable/icon_dot_red"/>
+                <TextView android:textSize="12sp" android:textColor="@color/btn_red" android:id="@+id/EntrustSuccess_txtPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥0.00"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp">
+                <TextView android:textSize="12sp" android:textColor="@color/btn_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付方式：" android:drawableLeft="@drawable/icon_dot_red"/>
+                <TextView android:textSize="12sp" android:textColor="@color/blue" android:id="@+id/EntrustSuccess_txtType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付宝支付"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp">
+                <TextView android:textSize="12sp" android:textColor="@color/btn_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付时间：" android:drawableLeft="@drawable/icon_dot_red"/>
+                <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:id="@+id/EntrustSuccess_txtTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2017.1.7 17:17:17"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/gray_c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="您好，如有疑问，请联系客服！" android:drawableLeft="@drawable/icon_dot_red"/>
+</LinearLayout>

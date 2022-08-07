@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:background="@color/white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.2">
+        <ImageView android:id="@+id/img_extranal_avarta" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/def_head"/>
+    </LinearLayout>
+    <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3">
+        <TextView android:id="@+id/txt_extranal_name" android:padding="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/txtDefaultStyle"/>
+        <TextView android:id="@+id/txt_extranal_recommand" android:padding="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/txt_extranal_name" android:layout_alignParentTop="true" android:layout_toEndOf="@+id/txt_extranal_name" style="@style/txtDefaultStyle"/>
+        <TextView android:id="@+id/txt_wgd" android:padding="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/external_money" android:layout_below="@+id/txt_extranal_recommand" style="@style/txtSmallStyle"/>
+        <TextView android:id="@+id/txt_wgdMoney" android:padding="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/txt_wgd" android:layout_alignBottom="@+id/txt_wgd" android:layout_toEndOf="@+id/txt_wgd" style="@style/txtSmallStyle"/>
+        <TextView android:id="@+id/txt_wgd2" android:padding="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/external_profit" android:layout_below="@+id/txt_wgd" style="@style/txtSmallStyle"/>
+        <TextView android:id="@+id/txt_wgdProfit" android:padding="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/txt_wgd2" android:layout_alignBottom="@+id/txt_wgd2" android:layout_toEndOf="@+id/txt_wgd2" style="@style/txtSmallStyle"/>
+        <TextView android:id="@+id/txt_wgd3" android:padding="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/external_time" android:layout_below="@+id/txt_wgd2" style="@style/txtSmallStyle"/>
+        <TextView android:id="@+id/txt_wgdTime" android:padding="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/txt_wgd3" android:layout_alignBottom="@+id/txt_wgd3" android:layout_toEndOf="@+id/txt_wgd3" style="@style/txtSmallStyle"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:background="@color/white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.5">
+        <Button android:textSize="@dimen/txt_small" android:id="@+id/btn_extranalwgd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/padding_default" android:text="开通权限" android:layout_below="@+id/txt_extranal_recommand" style="@style/btnStyle"/>
+    </LinearLayout>
+</LinearLayout>

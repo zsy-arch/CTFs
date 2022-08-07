@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/ease_mm_listitem" android:layout_width="match_parent" android:layout_height="55dp">
+    <LinearLayout android:id="@+id/rl_group" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="32sp" android:textColor="@color/demand_order_green" android:gravity="center" android:id="@+id/avatar" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:text="+"/>
+        <TextView android:textSize="18sp" android:textColor="@color/demand_order_green" android:gravity="center_vertical" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:text="新建群聊"/>
+    </LinearLayout>
+    <View android:id="@+id/header" android:background="@color/gray_e" android:layout_width="match_parent" android:layout_height="5dp"/>
+</LinearLayout>

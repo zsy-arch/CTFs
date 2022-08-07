@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/btn_white_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@drawable/btn_red_selector_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="44dp" android:text="账户激活"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/gray_a" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="充0.01元激活账户，送3个共享宝"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/active_real" android:background="@drawable/icon_active_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_active_real"/>
+            <TextView android:gravity="center" android:layout_width="120dp" android:layout_height="wrap_content" android:text="实名认证激活"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/active_ali" android:background="@drawable/icon_active_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="20dp">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_active_ali"/>
+            <TextView android:gravity="center" android:layout_width="120dp" android:layout_height="wrap_content" android:text="微信/支付宝激活"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

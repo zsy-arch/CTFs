@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/theme_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/find_paypwd_page1" android:background="@color/gray_e" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingTop="30dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="20dp" android:textStyle="bold" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_pwd_set"/>
+            <TextView android:layout_gravity="center" android:id="@+id/find_tvPhone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="请设置您的支付密码,用于支付验证"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <com.vsf2f.f2f.ui.view.NumPwdView android:id="@+id/pwdeditview" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="20dp"/>
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/find_tvCommit" android:background="@drawable/btn_red_selector" android:layout_width="match_parent" android:layout_height="@dimen/edit_height" android:layout_margin="20dp" android:text="确定"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.vsf2f.f2f.ui.view.NumKeyView android:id="@+id/keyboardview" android:background="@color/gray_c" android:paddingTop="2dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:shadowRadius="0" android:layout_alignParentBottom="true" android:keyBackground="@drawable/btn_bottom_selector" android:keyTextColor="@color/black_deep"/>
+</RelativeLayout>

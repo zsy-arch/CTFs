@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/shape_bgm_gray_5" android:layout_width="280dp" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_main_password" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:id="@+id/tv_pay_title" android:layout_width="match_parent" android:layout_height="44dp" android:text="选择提现账户"/>
+        <include layout="@layout/in_divider"/>
+        <com.hy.frame.view.NavGroup android:orientation="vertical" android:id="@+id/type_group" android:background="@color/gray_e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp">
+            <com.hy.frame.view.NavView android:id="@+id/type_ali" android:tag="0" android:background="@drawable/btn_bottom_selector" android:layout_width="match_parent" android:layout_height="44dp" app:navDrawRight="@drawable/checkbox_confirm_selector" app:navText="@string/aliPay" app:navTextColor="@color/gray_a" app:navDraw="@drawable/icon_pay_ali2" style="@style/rechargeNavStyle"/>
+            <com.hy.frame.view.NavView android:id="@+id/type_wx" android:tag="1" android:background="@drawable/btn_bottom_selector" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="1dp" app:navDrawRight="@drawable/checkbox_confirm_selector" app:navText="@string/share_wx" app:navTextColor="@color/gray_a" app:navDraw="@drawable/icon_pay_wx2" style="@style/rechargeNavStyle"/>
+        </com.hy.frame.view.NavGroup>
+    </LinearLayout>
+</LinearLayout>

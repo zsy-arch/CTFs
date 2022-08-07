@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bgm_finance_center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar android:id="@+id/head_toolBar" android:paddingTop="25dp" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="@dimen/header_height_fit">
+                <TextView android:textSize="?attr/appTitleSize" android:textStyle="normal" android:textColor="?attr/appTitleColor" android:gravity="center" android:layout_gravity="center" android:id="@+id/head_vTitle" android:layout_width="wrap_content" android:layout_height="?attr/appHeaderHeight" android:text="@string/finance_title" android:singleLine="true"/>
+            </android.support.v7.widget.Toolbar>
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/cur_balance_"/>
+            <TextView android:textSize="40sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/user_fnc_txtBalance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="0.00"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/frozen_cash" android:drawableLeft="@drawable/icon_warning" android:drawablePadding="6dp"/>
+                <TextView android:textSize="15sp" android:textColor="@color/white" android:id="@+id/user_fnc_txtFrozen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00"/>
+            </LinearLayout>
+            <TextView android:textSize="10sp" android:textColor="@color/calculator_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="@string/frozen_cash_remind"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+                <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/user_fnc_btnWithdraw" android:background="@drawable/btn_red_selector_finace" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="62dp" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:text="@string/withdrawal"/>
+                <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/user_fnc_btnRecharge" android:background="@drawable/btn_red_selector_finace" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="62dp" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:text="@string/recharge"/>
+                <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/user_fnc_btnRedRecord" android:background="@drawable/btn_red_selector_finace" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="72dp" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:text="红包记录"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/divider_gray_" android:layout_width="match_parent" android:layout_height="5dp"/>
+        <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="65dp" android:baselineAligned="false">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/user_fnc_llyProfitShare" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/txt_red_finace" android:id="@+id/user_fnc_txtProfitShare" android:paddingBottom="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00"/>
+                <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profit_share"/>
+            </LinearLayout>
+            <include layout="@layout/in_divider_vertical"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/user_fnc_llyBonusPlatform" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/txt_red_finace" android:id="@+id/user_fnc_txtBonusPlatform" android:paddingBottom="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00"/>
+                <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bonus_platform"/>
+            </LinearLayout>
+            <include layout="@layout/in_divider_vertical"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/user_fnc_llyBonusSales" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/txt_red_finace" android:id="@+id/user_fnc_txtBonusSales" android:paddingBottom="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00"/>
+                <TextView android:textSize="14sp" android:gravity="center_vertical" android:paddingLeft="@dimen/padding_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bonus_sales"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/divider_gray_" android:layout_width="match_parent" android:layout_height="5dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/user_fnc_llyLevel" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:textSize="14sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/vip_up_level" android:layout_weight="1"/>
+            <TextView android:textSize="13sp" android:layout_gravity="center" android:id="@+id/user_fnc_txtLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vip_normal"/>
+            <TextView android:textSize="12sp" android:textColor="@color/txt_red_finace" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/open_pms" android:layout_weight="1"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:src="@drawable/icon_next2"/>
+        </LinearLayout>
+        <View android:background="@color/divider_gray_" android:layout_width="match_parent" android:layout_height="5dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/user_fnc_llyGoldbean" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:textSize="14sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="我的金豆" android:layout_weight="1"/>
+            <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/red" android:layout_gravity="center" android:id="@+id/user_fnc_txtGoldbean" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0个"/>
+            <TextView android:textSize="12sp" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="金豆详情" android:layout_weight="1"/> /&gt;\10
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:src="@drawable/icon_next2"/>
+        </LinearLayout>
+        <View android:background="@color/divider_gray_" android:layout_width="match_parent" android:layout_height="5dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/user_fnc_llyGoldcoin" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:textSize="14sp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="我的金币" android:layout_weight="1"/>
+            <TextView android:textSize="13sp" android:textStyle="bold" android:textColor="@color/red" android:layout_gravity="center" android:id="@+id/user_fnc_txtGoldcoin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0个"/>
+            <TextView android:textSize="12sp" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="金币详情" android:layout_weight="1"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:src="@drawable/icon_next2"/>
+        </LinearLayout>
+        <View android:background="@color/divider_gray_" android:layout_width="match_parent" android:layout_height="5dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/user_fnc_llyProfitExternal" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="60dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="13sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_normal" android:text="积分返还记录" android:lines="1"/>
+                <TextView android:textSize="8sp" android:textColor="@color/txt_red_finace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profit_external_prompt" android:lines="1"/>
+            </LinearLayout>
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/red" android:layout_gravity="center" android:id="@+id/user_fnc_txtProfitExternal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0 分" android:lines="1"/>
+            <TextView android:textSize="12sp" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="积分详情" android:singleLine="true" android:layout_weight="1"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:src="@drawable/icon_next2"/>
+        </LinearLayout>
+        <View android:background="@color/divider_gray_" android:layout_width="match_parent" android:layout_height="5dp"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/user_fnc_llyCoupon" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="60dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/vouchers"/>
+                <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/txt_red" android:gravity="center" android:id="@+id/user_fnc_txtSumCoupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="0.00元"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/vouchers_prompt"/>
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/red" android:layout_gravity="center" android:id="@+id/user_fnc_txtCoupon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00"/>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:gravity="right" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/external_shop" android:layout_weight="1"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="5dp" android:src="@drawable/icon_next2"/>
+        </LinearLayout>
+        <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/tv_remind" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/finance_prompt"/>
+    </LinearLayout>
+</LinearLayout>

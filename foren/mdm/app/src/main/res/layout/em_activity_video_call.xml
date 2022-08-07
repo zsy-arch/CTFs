@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <com.hyphenate.media.EMOppositeSurfaceView android:id="@+id/opposite_surface" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/ll_btns" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_top_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_alignParentTop="true">
+            <TextView android:textSize="22sp" android:textColor="@color/voip_interface_text_color" android:id="@+id/tv_call_state" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.em.widget.MyChronometer android:textColor="#fff" android:id="@+id/chronometer" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chronometer"/>
+            <TextView android:textColor="#fff" android:id="@+id/tv_is_p2p" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="20sp" android:textColor="@android:color/white" android:id="@+id/tv_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="张三"/>
+        </LinearLayout>
+        <Button android:id="@+id/btn_record_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recording_video" android:layout_below="@+id/ll_top_container"/>
+        <Button android:id="@+id/btn_switch_camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/switch_camera" android:layout_below="@+id/btn_record_video"/>
+        <SeekBar android:id="@+id/seekbar_y_detal" android:layout_width="200dp" android:layout_height="wrap_content" android:max="200" android:progress="100" android:layout_below="@+id/btn_switch_camera"/>
+        <TextView android:textSize="12sp" android:textColor="#ffff" android:id="@+id/tv_call_monitor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:layout_above="@+id/local_surface" android:layout_alignParentRight="true"/>
+        <com.hyphenate.media.EMLocalSurfaceView android:id="@+id/local_surface" android:layout_width="100dp" android:layout_height="120dp" android:layout_above="@+id/ll_surface_baseline" android:layout_alignParentRight="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_surface_baseline" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_bottom_container" android:paddingBottom="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:id="@+id/ll_voice_control" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_mute" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/em_icon_mute_normal" android:scaleType="fitCenter"/>
+                        <TextView android:textColor="#666167" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/mute"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                        <ImageView android:id="@+id/iv_handsfree" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/em_icon_speaker_normal" android:scaleType="fitCenter"/>
+                        <TextView android:textColor="#666167" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/Hands_free"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                    <Button android:textSize="20sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_hangup_call" android:background="@drawable/em_call_hangup_bg" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="55dp" android:text="@string/hang_up"/>
+                    <LinearLayout android:id="@+id/ll_coming_call" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <Button android:textSize="20sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_refuse_call" android:background="@drawable/em_call_hangup_bg" android:layout_width="wrap_content" android:layout_height="55dp" android:text="@string/hang_up" android:layout_weight="1"/>
+                        <Button android:textSize="20sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_answer_call" android:background="@drawable/em_call_answer_bg" android:layout_width="wrap_content" android:layout_height="55dp" android:layout_marginLeft="30dp" android:text="@string/answer" android:layout_weight="1"/>
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textColor="@android:color/white" android:id="@+id/tv_network_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

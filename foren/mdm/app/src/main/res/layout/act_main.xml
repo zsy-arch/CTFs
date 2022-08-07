@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/main_flyContainer" android:background="@color/theme_bg" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <View android:background="@color/gray_d" android:layout_width="match_parent" android:layout_height="1.2px"/>
+    <com.hy.frame.view.NavGroup android:gravity="bottom" android:orientation="horizontal" android:id="@+id/main_groupFooter" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.hy.frame.view.NavView android:id="@+id/main_navTalk" android:tag="0" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:navText="@string/tab_talk" app:navTextSize="@dimen/txt_default" app:navDraw="@drawable/tab_main_chat_selector" style="@style/navMainStyle">
+            <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="right" android:id="@+id/unread_msg_number" android:background="@drawable/ease_unread_count_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp"/>
+        </com.hy.frame.view.NavView>
+        <com.hy.frame.view.NavView android:id="@+id/main_navFriend" android:tag="1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:navText="@string/tab_friend" app:navTextSize="@dimen/txt_default" app:navDraw="@drawable/tab_main_friend_selector" style="@style/navMainStyle">
+            <TextView android:textSize="10sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="right" android:id="@+id/unread_address_number" android:background="@drawable/ease_unread_count_bg" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp"/>
+        </com.hy.frame.view.NavView>
+        <com.hy.frame.view.NavView android:id="@+id/main_navPlatform" android:tag="2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:navText="@string/tab_share" app:navTextColor="@color/tab_item_selector" app:navTextSize="@dimen/txt_default" app:navDraw="@drawable/tab_main_center_selector" style="@style/navMainStyle"/>
+        <com.hy.frame.view.NavView android:id="@+id/main_navCircle" android:tag="3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:navText="@string/tab_discover" app:navTextSize="@dimen/txt_default" app:navDraw="@drawable/tab_main_found_selector" style="@style/navMainStyle">
+            <ImageView android:layout_gravity="right" android:id="@+id/iv_circles_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:src="@drawable/icon_tishi"/>
+        </com.hy.frame.view.NavView>
+        <com.hy.frame.view.NavView android:id="@+id/main_navMine" android:tag="4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:navText="@string/tab_me" app:navTextSize="@dimen/txt_default" app:navDraw="@drawable/tab_main_mine_seletor" style="@style/navMainStyle"/>
+    </com.hy.frame.view.NavGroup>
+</LinearLayout>

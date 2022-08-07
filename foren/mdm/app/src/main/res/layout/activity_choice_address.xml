@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/activity_choice_address" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/theme" android:padding="10dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_back" android:onClick="back"/>
+        <RelativeLayout android:background="@color/gray_e" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="30dp" android:layout_weight="1">
+            <EditText android:textColor="@color/txt_gray" android:id="@+id/et_key" android:background="@null" android:paddingLeft="35dp" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/search_address"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/icon_search_" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/content_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/main_groupFooter">
+        <com.vsf2f.f2f.ui.needs.star.EaseAddressList android:id="@+id/contact_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

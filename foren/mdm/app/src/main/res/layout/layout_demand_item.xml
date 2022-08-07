@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/gray_e" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_parent" android:background="@drawable/shape_white_round_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="6dp" android:layout_marginRight="10dp" android:layout_marginBottom="6dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="12dp" android:paddingTop="10dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.hy.frame.view.RotundityImageView android:id="@+id/riv_user" android:layout_width="35dp" android:layout_height="35dp" android:src="@mipmap/def_head"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <TextView android:textSize="12sp" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="80dp" android:text="12345678910" android:lines="1"/>
+                    <ImageView android:id="@+id/iv_sex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/switch_sex2_selector"/>
+                    <View android:background="@color/blue" android:layout_width="1.5dp" android:layout_height="12dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"/>
+                    <TextView android:textSize="11sp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="认证:"/>
+                    <com.vsf2f.f2f.ui.view.IdentyStateView android:id="@+id/identyStateView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                    <com.cdlinglu.server.audio.MusicPlayer android:id="@+id/voicePlayer" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <TextView android:textSize="11sp" android:textColor="@color/gray_b" android:id="@+id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1小时前"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <com.hy.frame.view.MyGridView android:id="@+id/mgv_pic" android:paddingLeft="20dp" android:paddingTop="5dp" android:paddingRight="20dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="5dp" android:verticalSpacing="5dp" android:numColumns="3"/>
+        <include layout="@layout/in_divider"/>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="12dp" android:paddingTop="12dp" android:paddingRight="12dp" android:paddingBottom="11dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_demand_title"/>
+                <TextView android:textSize="14sp" android:textColor="@color/demand_servicing" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="10dp" android:text="标题" android:singleLine="true" android:maxLength="8"/>
+                <TextView android:textSize="14sp" android:textColor="@color/golden_fac" android:id="@+id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="200元"/>
+                <TextView android:textSize="10sp" android:textColor="@color/demand_sub" android:id="@+id/tv_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/小时"/>
+                <TextView android:textSize="12sp" android:textColor="@color/txt_red_finace" android:id="@+id/tv_servicetype" android:background="@drawable/shape_voice_gray" android:paddingLeft="5dp" android:paddingTop="2dp" android:paddingRight="5dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="线下服务" android:singleLine="true"/>
+                <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_demand_content"/>
+                <TextView android:textSize="12sp" android:textColor="@color/gray_a" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="详情" android:maxLines="2"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_demand_area"/>
+                <TextView android:textColor="@color/blue" android:ellipsize="end" android:id="@+id/tv_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:maxWidth="140dp" android:text="地址" android:singleLine="true"/>
+                <TextView android:textSize="12sp" android:textColor="@color/demand_more" android:gravity="center_vertical" android:id="@+id/tv_location" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="1km"/>
+                <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/tv_immediately" android:background="@drawable/icon_demand_immediately" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="立即抢单" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

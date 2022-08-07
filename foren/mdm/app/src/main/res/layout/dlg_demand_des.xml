@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/ll_root" android:background="@drawable/shape_round_7" android:padding="15dp" android:layout_width="match_parent" android:layout_height="160dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+        <com.hy.frame.view.RotundityImageView android:id="@+id/riv_user" android:layout_width="50dp" android:layout_height="50dp" android:src="@mipmap/def_head"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="匿名"/>
+                <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                <TextView android:textSize="18sp" android:textColor="@color/golden_fac" android:id="@+id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0元"/>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="@color/gray_c" android:id="@+id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="11km" android:drawableLeft="@drawable/icon_demand_dingwei" android:drawablePadding="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/in_divider"/>
+    <TextView android:textSize="16sp" android:textColor="@color/demand_super" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="标题" android:lines="1"/>
+    <TextView android:textSize="14sp" android:textColor="@color/demand_more" android:ellipsize="end" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:text="内容" android:lines="2"/>
+</LinearLayout>

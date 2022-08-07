@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/ll_parent" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.hy.frame.view.RotundityImageView android:id="@+id/riv_user" android:layout_width="40dp" android:layout_height="40dp" android:src="@mipmap/def_head"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+                <TextView android:id="@+id/user_comment_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题"/>
+                <ImageView android:id="@+id/vip_crown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_crown"/>
+                <View android:layout_width="0dp" android:layout_height="1px" android:layout_weight="1"/>
+                <TextView android:textSize="13sp" android:textColor="@color/gray_b" android:id="@+id/user_comment_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1分钟前"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="3dp">
+                <com.vsf2f.f2f.ui.needs.star.StarLinearLayout android:orientation="horizontal" android:id="@+id/sll_attidu" android:layout_width="wrap_content" android:layout_height="wrap_content" app:starImageSize="15dp" app:starPadding="3dp" app:starCount="5" app:starEmpty="@drawable/icon_pingfen_nor" app:starFill="@drawable/icon_pingfen_hover" app:starHalf="@drawable/icon_pingfen_half" app:clickable="false" app:stepSize="0"/>
+                <TextView android:id="@+id/user_comment_score" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="5分" android:layout_weight="1"/>
+                <TextView android:textSize="10sp" android:textColor="@color/green" android:id="@+id/user_comment_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="服务评价"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+        <com.hy.frame.view.MyGridView android:id="@+id/user_comment_mgv" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="3dp" android:verticalSpacing="3dp" android:numColumns="4"/>
+    </LinearLayout>
+    <LinearLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:id="@+id/user_comment_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="111"/>
+    </LinearLayout>
+</LinearLayout>

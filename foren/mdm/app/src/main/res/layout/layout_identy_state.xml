@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:padding="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_idcard" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:src="@drawable/ico_me_real"/>
+    <ImageView android:id="@+id/iv_zhima" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:src="@drawable/ico_me_zima"/>
+    <ImageView android:id="@+id/iv_alipay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:src="@drawable/ico_me_ali"/>
+    <ImageView android:id="@+id/iv_qq" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:src="@drawable/ico_me_qq"/>
+    <ImageView android:id="@+id/iv_wechat" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:src="@drawable/ico_me_wechat"/>
+    <ImageView android:id="@+id/iv_phone" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:src="@drawable/ico_me_mobile"/>
+</LinearLayout>

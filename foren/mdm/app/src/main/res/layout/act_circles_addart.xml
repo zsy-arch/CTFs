@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/scrollView_main_circles_addart" android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_normal">
+        <RelativeLayout android:id="@+id/circles_addart_rlyTop" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20sp" android:textColor="@color/gray_c" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="添加封面" android:drawableLeft="@mipmap/ico_add" android:layout_centerInParent="true"/>
+            <ImageView android:gravity="center" android:paddingRight="10dp" android:paddingBottom="10dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_circle_artcamera" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            <ImageView android:id="@+id/circles_addart_imgCover" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_circle_artcover" android:scaleType="fitXY"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/gray_f" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="18sp" android:textColor="@color/gray_a" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="5dp" android:text="标题"/>
+            <EditText android:textSize="14sp" android:textColorHint="@color/gray_d" android:id="@+id/circles_addart_editTitle" android:background="@color/white" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="@dimen/height_top_bar" android:hint="给你的文章写一个标题，20字内" android:maxLength="20"/>
+        </LinearLayout>
+        <TextView android:textSize="13sp" android:textColor="@color/gray_a" android:background="@color/gray_f" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="文章正文"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.vsf2f.f2f.ui.view.richEditor.RichTextEditor android:id="@+id/editor_circles_addart" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:background="@color/gray_e" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_addpic_circles_addart" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <ImageView android:id="@+id/circle_addpic" android:background="@drawable/icon_circle_artadd" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="添加图片"/>
+                </LinearLayout>
+                <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <LinearLayout android:layout_gravity="right" android:background="@color/white" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="@dimen/height_top_bar">
+                    <ImageView android:id="@+id/imgMap" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_normal" android:src="@mipmap/ico_marka"/>
+                    <TextView android:gravity="center_vertical" android:id="@+id/circles_addart_txtLocation" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:hint="所在位置" android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/in_divider"/>
+            <LinearLayout android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/height_top_bar">
+                <ImageView android:id="@+id/imgSort" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:src="@mipmap/ico_sort"/>
+                <com.hy.frame.view.KeyValueView android:id="@+id/kv_ispublic" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/is_public" style="@style/toggleKvStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

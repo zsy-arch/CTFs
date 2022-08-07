@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/withdrawal_llyWx" android:background="@drawable/btn_bottom_selector" android:padding="@dimen/padding_default" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_normal">
+        <ImageView android:id="@+id/img_payivarta" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_login_wechat"/>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/padding_default" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/txt_payname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信支付"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="@color/txt_gray" android:id="@+id/txt_payaccount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信号："/>
+                <TextView android:textSize="12sp" android:textColor="@color/txt_gray" android:id="@+id/withdrawal_txtAccount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ACCOUNT"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/withdrawal_cbtnW" android:background="@drawable/icon_radio_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_normal"/>
+    </LinearLayout>
+</LinearLayout>

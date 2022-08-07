@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:id="@+id/sharing_btnShowList" android:background="@color/calculator_white" android:layout_width="match_parent" android:layout_height="40dp" android:text="出让列表"/>
+    <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/txt_blue" android:gravity="center" android:id="@+id/item_sharing_txt1" android:layout_width="0dp" android:layout_height="40dp" android:text="时间" android:layout_weight="1"/>
+        <TextView android:textColor="@color/txt_blue" android:gravity="center" android:id="@+id/item_sharing_txt2" android:layout_width="0dp" android:layout_height="40dp" android:text="出让人" android:layout_weight="1.5"/>
+        <TextView android:textColor="@color/txt_blue" android:gravity="center" android:id="@+id/item_sharing_txt3" android:layout_width="0dp" android:layout_height="40dp" android:text="数量" android:layout_weight="1.2"/>
+        <TextView android:textColor="@color/txt_blue" android:gravity="center" android:id="@+id/item_sharing_txt4" android:layout_width="0dp" android:layout_height="40dp" android:text="价格" android:layout_weight="1"/>
+        <TextView android:textColor="@color/txt_blue" android:gravity="center" android:id="@+id/item_sharing_txt5" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.hy.frame.view.recycler.xRefreshView.XRefreshView android:id="@+id/xrv_parent" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.hy.frame.view.recycler.xRefreshView.XScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.vsf2f.f2f.ui.view.MyListview android:id="@+id/sharing_record_list_buy" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@color/gray_e"/>
+            </com.hy.frame.view.recycler.xRefreshView.XScrollView>
+        </com.hy.frame.view.recycler.xRefreshView.XRefreshView>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/sharing_buy_no_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textColor="@color/gray_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="暂无人出售共享宝" android:drawableLeft="@drawable/icon_warning_deep" android:drawablePadding="5dp"/>
+            <TextView android:textColor="@color/blue" android:gravity="center" android:id="@+id/sharing_buy_com" android:background="@drawable/btn_blue_selector2" android:visibility="invisible" android:layout_width="110dp" android:layout_height="35dp" android:layout_marginTop="15dp" android:text="我要排队收购"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

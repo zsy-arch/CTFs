@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.easeui.widget.photoview.EasePhotoView android:id="@+id/bigimg_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    <android.support.v4.view.ViewPager android:id="@+id/img_viewpager" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ProgressBar android:id="@+id/bigimg_pbLoad" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp" android:layout_centerInParent="true"/>
+    <Button android:id="@+id/bigimg_btnMenu" android:background="@mipmap/dlg_menu" android:layout_width="30dp" android:layout_height="25dp" android:layout_margin="@dimen/margin_normal" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>

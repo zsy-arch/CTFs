@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:background="@color/white" android:padding="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_address_name" android:ems="4"/>
+        <EditText android:textColorHighlight="@color/green" android:textColorHint="@color/gray_c" android:gravity="center" android:id="@+id/edit_addname" android:background="@color/white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_normal" android:hint="@string/add_address_edit_name" android:layout_weight="1"/>
+        <ImageView android:id="@+id/img_adddelete" android:padding="5dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_clear"/>
+    </LinearLayout>
+    <include layout="@layout/in_divider"/>
+    <LinearLayout android:gravity="center" android:background="@color/white" android:padding="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_address_short_name" android:ems="4"/>
+        <EditText android:textColorHighlight="@color/green" android:textColorHint="@color/gray_c" android:gravity="center" android:id="@+id/edit_add_short_name" android:background="@color/white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_normal" android:hint="@string/add_address_edit_address_name" android:layout_weight="1"/>
+        <ImageView android:id="@+id/img_adddelete_short" android:padding="5dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_clear"/>
+    </LinearLayout>
+    <include layout="@layout/in_divider"/>
+    <LinearLayout android:gravity="center" android:background="@color/white" android:padding="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_address_save" android:ems="4"/>
+        <EditText android:textSize="10sp" android:textColorHighlight="@color/green" android:textColorHint="@color/gray_c" android:gravity="center" android:id="@+id/edit_add_save" android:background="@color/white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_normal" android:hint="@string/add_address_edit_save" android:layout_weight="1" android:inputType="textUri"/>
+        <ImageView android:id="@+id/img_adddelete_save" android:padding="5dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_clear"/>
+    </LinearLayout>
+    <include layout="@layout/in_divider"/>
+    <LinearLayout android:gravity="center" android:background="@color/white" android:padding="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_address_pic_save" android:ems="4"/>
+        <EditText android:textSize="10sp" android:textColorHighlight="@color/green" android:textColorHint="@color/gray_c" android:gravity="center" android:id="@+id/edit_addname_picurl" android:background="@color/white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_normal" android:hint="@string/add_address_edit" android:layout_weight="1" android:inputType="textUri"/>
+        <ImageView android:id="@+id/img_adddelete_picurl" android:padding="5dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_clear"/>
+    </LinearLayout>
+</LinearLayout>

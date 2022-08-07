@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="60dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/classify_bg" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginTop="5dp" android:layout_marginRight="@dimen/margin_normal" android:layout_marginBottom="5dp">
+        <TextView android:textSize="@dimen/txt_default" android:textColor="@color/txt_black" android:gravity="center_vertical" android:id="@+id/tv_name_item" android:layout_width="wrap_content" android:layout_height="50dp"/>
+        <EditText android:textSize="@dimen/txt_default" android:id="@+id/et_enter_item" android:background="@color/classify_bg" android:paddingLeft="@dimen/margin_normal" android:layout_width="0dp" android:layout_height="50dp" android:singleLine="true" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/txt_default" android:textColor="@color/txt_blue" android:gravity="center_vertical" android:id="@+id/tv_else_item" android:layout_width="wrap_content" android:layout_height="50dp"/>
+    </LinearLayout>
+</LinearLayout>

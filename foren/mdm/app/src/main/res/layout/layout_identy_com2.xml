@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_identy_real" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/page2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="证件持有人姓名" android:layout_weight="1"/>
+            <EditText android:textColor="@color/gray_a" android:textColorHint="@color/gray_c" android:gravity="center_vertical" android:id="@+id/ed_realname" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="填写与法人证件一致的真实姓名" android:lines="1" android:layout_weight="2.2" android:inputType="textPersonName"/>
+        </LinearLayout>
+        <include layout="@layout/in_divider"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="证件持有人类型" android:layout_weight="1"/>
+            <TextView android:textColor="@color/gray_a" android:textColorHint="@color/gray_c" android:gravity="center_vertical" android:id="@+id/tv_cardtype" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="选择所有权人法律性质类型" android:lines="1" android:layout_weight="2.2"/>
+        </LinearLayout>
+        <include layout="@layout/in_divider"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="身份证号码" android:layout_weight="1"/>
+            <EditText android:textSize="14sp" android:textColor="@color/gray_a" android:textColorHint="@color/gray_c" android:gravity="center_vertical" android:id="@+id/ed_idcard" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="请输入身份证号码" android:maxLength="30" android:layout_weight="2.2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="5dp">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="身份证有效期" android:layout_weight="1"/>
+            <TextView android:textSize="14sp" android:textColor="@color/gray_a" android:textColorHint="@color/gray_c" android:gravity="center_vertical" android:id="@+id/tv_cardtime" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="例如：2020/7/29" android:layout_weight="2.2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="5dp">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="上传身份证照片" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12sp" android:textColor="@color/txt_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:text="请认真上传真实照片，以便顺利通过平台审核。"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:text="请拍摄或上传二代身份证正反面，手持身份证照，保证清晰可辨认个人信息的姓名与身份证件信息一致" android:lineSpacingExtra="3dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:text="所有图片支持格式jpg,jpeg,png，请保证每张照片的清晰完整。没经过人工处理且文件大小不超过5M。" android:lineSpacingExtra="3dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:paddingTop="20dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_front" android:layout_width="262dp" android:layout_height="170dp" android:src="@drawable/icon_identify_idcard1"/>
+            <TextView android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="身份证正面照"/>
+            <ImageView android:id="@+id/iv_behind" android:layout_width="262dp" android:layout_height="170dp" android:src="@drawable/icon_identify_idcard2"/>
+            <TextView android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="身份证反面照"/>
+            <ImageView android:id="@+id/iv_hold" android:layout_width="262dp" android:layout_height="170dp" android:src="@drawable/icon_identify_idcard3"/>
+            <TextView android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="手持身份证照"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

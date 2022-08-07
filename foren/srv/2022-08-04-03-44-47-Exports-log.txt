@@ -1,0 +1,2 @@
+Full Path,Local Path,Size(Byte),MD5,SHA256
+Case-20220804-151513/File system/centos(VolumeGroup)/root(LogicalVolume)/root/[Root]/root/install.sh,E:\CTF\蓝帽杯\2022M\foren\srv\2022-08-04-03-44-47-Exports\install.sh,25977,, 

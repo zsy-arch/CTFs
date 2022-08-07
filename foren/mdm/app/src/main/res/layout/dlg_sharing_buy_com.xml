@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/btn_white_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@drawable/btn_red_selector_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="44dp" android:text="申请排队"/>
+        <ImageView android:layout_gravity="right" android:id="@+id/iv_close" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_close_white"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="50dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30dp" android:text="申请数量"/>
+                <TextView android:textSize="12sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(个)"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="12sp" android:id="@+id/sharing_buy_etNum" android:background="@drawable/line_edittext" android:layout_width="200dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:text="" android:maxLength="7" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:gravity="center" android:layout_width="wrap_content" android:layout_height="30dp" android:text="申请出价"/>
+                <TextView android:textSize="12sp" android:textColor="@color/txt_red_finace" android:id="@+id/sharing_buy_tvPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(当前参考价值)"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="12sp" android:id="@+id/sharing_buy_etPrice" android:background="@drawable/line_edittext" android:layout_width="200dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:text="" android:maxLength="7" android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                <TextView android:textSize="14sp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="10dp" android:text="合计："/>
+                <TextView android:textSize="12sp" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="10dp" android:text="￥"/>
+                <TextView android:textSize="16sp" android:textColor="@color/red" android:id="@+id/sharing_buy_tvTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="10dp" android:text="0.00"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="10sp" android:textColor="@color/gray_b" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="金额超过2万，请先充值零钱，用余额支付！"/>
+        <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/sharing_buy_tvBuyCom" android:background="@drawable/btn_red10_selector2" android:layout_width="180dp" android:layout_height="40dp" android:layout_margin="20dp" android:text="马上排队"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+            <TextView android:textSize="12sp" android:gravity="center" android:id="@+id/regist_agree" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="同意并阅读" android:drawableLeft="@drawable/checkbox_red_selector" android:drawablePadding="5dp"/>
+            <TextView android:textSize="13sp" android:textColor="@color/txt_red" android:gravity="center" android:id="@+id/regist_agreement" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="《共享宝协议》"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

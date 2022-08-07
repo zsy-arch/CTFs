@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/item_add_rlyUser" android:background="@drawable/ease_mm_listitem" android:visibility="visible" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView android:id="@+id/item_add_imgAvatar" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginLeft="11dp" android:src="@mipmap/def_head" android:scaleType="fitXY" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16sp" android:textColor="#0f0f0f" android:id="@+id/item_add_txtName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_toRightOf="@+id/item_add_imgAvatar" android:layout_centerVertical="true"/>
+        <Button android:textSize="14sp" android:id="@+id/item_add_btnAdd" android:background="@drawable/em_button_bg" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="11dp" android:text="@string/button_add" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

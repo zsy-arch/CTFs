@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/activity_lanche_scucess" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="62dp" android:src="@drawable/icon_successfully_red"/>
+    <TextView android:textSize="16sp" android:textColor="@color/demand_super" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:text="@string/service_publish_scucess"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="10dp" android:src="@drawable/content_icon_arrow"/>
+    <LinearLayout android:gravity="center" android:id="@+id/ServicePublishScucess_llyscan" android:background="@drawable/btn_red_selector_solid" android:paddingLeft="8dp" android:paddingTop="5dp" android:paddingRight="8dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14dp" android:textColor="@color/btn_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看服务"/>
+    </LinearLayout>
+    <TextView android:textColor="@color/gray_b" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="温馨提示：如有疑问，请联系平台客服！"/>
+</LinearLayout>

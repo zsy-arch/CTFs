@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/theme_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/head_toolBar" android:background="?attr/appTitleBarBg" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="?attr/appHeaderHeight">
+        <TextView android:textSize="18sp" android:textColor="?attr/appTitleColor" android:gravity="center" android:id="@+id/head_vTitle" android:layout_width="wrap_content" android:layout_height="?attr/appHeaderHeight" android:layout_marginLeft="10dp" android:text="@string/app_name"/>
+        <ImageView android:layout_gravity="right" android:id="@+id/top_imgMore" android:background="@drawable/default_selector" android:padding="@dimen/margin_normal" android:layout_width="@dimen/header_width" android:layout_height="?attr/appHeaderHeight" android:src="@drawable/icon_add_white" android:scaleType="center" android:onClick="top_more" android:contentDescription="@string/app_name"/>
+        <ImageView android:layout_gravity="right" android:id="@+id/top_imgSearch" android:background="@drawable/default_selector" android:padding="@dimen/margin_normal" android:layout_width="@dimen/header_width" android:layout_height="?attr/appHeaderHeight" android:src="@drawable/icon_easou_search" android:scaleType="center" android:onClick="top_search" android:contentDescription="@string/app_name"/>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/xrv_wv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:id="@+id/web_pbBar" android:layout_width="match_parent" android:layout_height="2dp" android:max="100" android:progress="0" style="?android:attr/progressBarStyleHorizontal"/>
+        <ImageView android:id="@+id/web_imgEmpty" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/img_empty_web" android:layout_below="@+id/web_pbBar"/>
+        <ImageView android:id="@+id/discover_imgTree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="220dp" android:src="@drawable/icon_main_tree" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

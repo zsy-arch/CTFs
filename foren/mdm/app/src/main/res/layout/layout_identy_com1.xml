@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/page1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp">
+            <TextView android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="联系人" android:layout_weight="1"/>
+            <EditText android:textColor="@color/gray_a" android:textColorHint="@color/gray_c" android:gravity="center_vertical" android:id="@+id/et_real" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="输入真实的联系人姓名" android:lines="1" android:layout_weight="3"/>
+        </LinearLayout>
+        <include layout="@layout/in_divider"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="邮箱" android:layout_weight="1"/>
+            <EditText android:textColor="@color/gray_a" android:textColorHint="@color/gray_c" android:gravity="center_vertical" android:id="@+id/et_email" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="填写您常用的邮箱地址" android:lines="1" android:digits="@string/digits_account" android:layout_weight="3" android:inputType="textEmailAddress"/>
+        </LinearLayout>
+        <include layout="@layout/in_divider"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/phone_number" android:layout_weight="1"/>
+            <EditText android:textSize="14sp" android:textColor="@color/gray_a" android:textColorHint="@color/gray_c" android:gravity="center_vertical" android:id="@+id/et_phone" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="输入您常用的手机号码" android:digits="@string/digits_phone" android:layout_weight="3" android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="5dp">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="企业名称" android:layout_weight="1"/>
+            <EditText android:textSize="14sp" android:textColor="@color/gray_a" android:textColorHint="@color/gray_c" android:gravity="center_vertical" android:id="@+id/et_comname" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="填写工商注册的企业真实名称" android:layout_weight="3"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="1px">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="注册地址" android:layout_weight="1"/>
+            <EditText android:textSize="14sp" android:textColor="@color/gray_a" android:textColorHint="@color/gray_c" android:gravity="center_vertical" android:id="@+id/et_addr" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="填写您的公司所在地址" android:layout_weight="3"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="5dp">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="网站" android:layout_weight="1"/>
+            <EditText android:textSize="14sp" android:textColor="@color/gray_a" android:textColorHint="@color/gray_c" android:gravity="center_vertical" android:id="@+id/et_comweb" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="填写您的公司的网址" android:layout_weight="3" android:inputType="textUri"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="1px">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="0dp" android:layout_height="wrap_content" android:text="公司电话" android:layout_weight="1"/>
+            <EditText android:textSize="14sp" android:textColor="@color/gray_a" android:textColorHint="@color/gray_c" android:gravity="center_vertical" android:id="@+id/et_comphone" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:hint="输入公司的办公电话" android:digits="@string/digits_phone" android:layout_weight="3" android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="5dp">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="特殊资质/企业荣誉"/>
+        </LinearLayout>
+        <GridView android:id="@+id/gv_pic" android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="300dp" android:layout_margin="5dp" android:horizontalSpacing="5dp" android:verticalSpacing="5dp" android:numColumns="3"/>
+    </LinearLayout>
+</ScrollView>

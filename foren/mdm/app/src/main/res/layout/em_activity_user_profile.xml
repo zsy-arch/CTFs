@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="250dp" android:layout_marginBottom="8dp">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bgm_user_cover" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.Toolbar android:id="@+id/head_toolBar" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="44dp"/>
+                <LinearLayout android:paddingTop="25dp" android:layout_width="match_parent" android:layout_height="150dp">
+                    <RelativeLayout android:layout_width="84dp" android:layout_height="84dp" android:layout_marginLeft="10dp">
+                        <com.hy.frame.view.RotundityImageView android:layout_width="74dp" android:layout_height="74dp" android:src="@mipmap/def_head2" android:layout_centerInParent="true"/>
+                        <com.hy.frame.view.RotundityImageView android:layout_gravity="center" android:id="@+id/user_ivAvatar" android:layout_width="70dp" android:layout_height="70dp" android:layout_centerInParent="true"/>
+                        <ImageView android:id="@+id/user_imgVip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:src="@drawable/icon_mine_crown"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/txt_medium" android:textColor="@color/white" android:id="@+id/user_tvNickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nick" android:singleLine="true"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="25dp">
+                            <TextView android:textSize="8dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/user_txtZhimaCode" android:background="@drawable/bgm_zhima_code" android:paddingLeft="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100"/>
+                            <TextView android:textSize="10sp" android:textColor="@color/calculator_white" android:id="@+id/user_tvZhima" android:background="@drawable/bgm_zhima_code2" android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="0"/>
+                            <ImageView android:id="@+id/user_ivSex" android:background="@drawable/switch_sex_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_default"/>
+                            <TextView android:textSize="10sp" android:textColor="@color/calculator_white" android:gravity="center_vertical" android:id="@+id/user_tvAge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="18岁"/>
+                            <ImageView android:id="@+id/user_ivCom" android:background="@drawable/icon_mark_identycom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_default"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp">
+                            <TextView android:textSize="10sp" android:textColor="@color/calculator_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="认证："/>
+                            <com.vsf2f.f2f.ui.view.IdentyStateView android:id="@+id/identyStateView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/btn_white_selector_top" android:layout_width="match_parent" android:layout_height="84dp" android:layout_margin="10dp" android:layout_alignParentBottom="true">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/user_profile_demand" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_user_demand"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="他的需求"/>
+                    <TextView android:textSize="12sp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="0"/>
+                </LinearLayout>
+                <include layout="@layout/in_divider_vertical"/>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/user_profile_service" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_user_service"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="他的服务"/>
+                    <TextView android:textSize="12sp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="0"/>
+                </LinearLayout>
+                <include layout="@layout/in_divider_vertical"/>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/user_profile_comment" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_user_evaluatio"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="服务评价"/>
+                    <TextView android:textSize="12sp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="0"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/user_llPhotos" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginTop="1px">
+            <TextView android:textSize="@dimen/txt_default" android:textColor="@color/txt_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="个人相册"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/user_llPhoto" android:layout_width="0dp" android:layout_height="50dp" android:layout_marginLeft="10dp" android:layout_weight="1"/>
+            <ImageView android:layout_width="16dp" android:layout_height="wrap_content" android:src="@mipmap/ico_next_big"/>
+        </LinearLayout>
+        <include layout="@layout/in_divider"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/user_llRemark" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="5dp">
+            <TextView android:textSize="@dimen/txt_default" android:textColor="@color/txt_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="备注名称"/>
+            <TextView android:textSize="@dimen/txt_default" android:textColor="@color/gray_b" android:gravity="center_vertical" android:id="@+id/user_tvRemark" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1"/>
+            <ImageView android:layout_width="16dp" android:layout_height="wrap_content" android:src="@mipmap/ico_next_big"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/user_llScore" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="1px">
+            <TextView android:textSize="@dimen/txt_default" android:textColor="@color/txt_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="会员积分"/>
+            <TextView android:textSize="@dimen/txt_default" android:textColor="@color/gray_b" android:gravity="center_vertical" android:id="@+id/user_tvScore" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:layout_width="0dp" android:layout_height="match_parent" android:text="1111111" android:singleLine="true" android:layout_weight="1"/>
+            <ImageView android:layout_width="16dp" android:layout_height="wrap_content" android:src="@mipmap/ico_next_big"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/user_llShop" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="5dp">
+            <TextView android:textSize="@dimen/txt_default" android:textColor="@color/txt_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="他的店铺"/>
+            <TextView android:textSize="@dimen/txt_default" android:textColor="@color/gray_b" android:gravity="center_vertical" android:id="@+id/user_tvShop" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1"/>
+            <ImageView android:layout_width="16dp" android:layout_height="wrap_content" android:src="@mipmap/ico_next_big"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/user_llPhone" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="1px">
+            <TextView android:textSize="@dimen/txt_default" android:textColor="@color/txt_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系方式"/>
+            <TextView android:textSize="@dimen/txt_default" android:textColor="@color/gray_b" android:gravity="center_vertical" android:id="@+id/user_tvPhone" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_big" android:layout_marginBottom="@dimen/padding_big" android:src="@drawable/ease_chat_voice_call_receive"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="55dp">
+            <TextView android:textSize="@dimen/txt_default" android:textColor="@color/txt_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="会员积分"/>
+            <TextView android:textSize="@dimen/txt_default" android:textColor="@color/txt_black" android:gravity="center_vertical" android:id="@+id/user_points" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:padding="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="@dimen/txt_default" android:textColor="@color/txt_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/personal"/>
+            <include layout="@layout/in_divider"/>
+            <TextView android:textSize="@dimen/txt_default" android:textColor="@color/gray_b" android:gravity="center" android:id="@+id/user_tvContent" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:lines="3"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/txt_default" android:textColor="@color/white" android:id="@+id/btn_send_message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="@dimen/margin_normal" android:text="@string/send_message" style="@style/btnStyle"/>
+            <Button android:textSize="@dimen/txt_default" android:textColor="@color/white" android:id="@+id/btn_add_friend" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="@dimen/margin_normal" android:text="@string/add_friend" style="@style/btnStyle"/>
+            <Button android:textSize="@dimen/txt_default" android:textColor="@color/txt_gray" android:id="@+id/btn_delete_friend" android:background="@drawable/btn_grey_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="@dimen/margin_normal" android:text="@string/delete_friend"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

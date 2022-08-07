@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:layout_gravity="center" android:id="@+id/timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/chat_text_date_style"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_chat_activity">
+        <com.hy.frame.view.RotundityImageView android:layout_width="@dimen/size_avatar" android:layout_height="@dimen/size_avatar" android:layout_marginLeft="@dimen/margin_chat_activity" android:src="@mipmap/def_head2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        <com.hy.frame.view.RotundityImageView android:id="@+id/iv_userhead" android:layout_width="@dimen/size_avatar" android:layout_height="@dimen/size_avatar" android:layout_marginLeft="@dimen/margin_chat_activity" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        <RelativeLayout android:id="@+id/bubble" android:background="@drawable/ease_chatfrom_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_chat_activity" android:layout_marginRight="@dimen/margin_chat_big" android:layout_toRightOf="@+id/iv_userhead" android:layout_below="@+id/tv_userid">
+            <TextView android:textSize="15sp" android:textColor="@color/black" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/tv_chatcontent" android:paddingLeft="10dp" android:paddingRight="10dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/chat_msg_max_width" android:minHeight="35dp" android:lineSpacingExtra="2dp"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/chat_nick_text_size" android:id="@+id/tv_userid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/chat_nick_margin_left" android:layout_toRightOf="@+id/iv_userhead" style="@style/chat_text_name_style"/>
+    </RelativeLayout>
+</LinearLayout>

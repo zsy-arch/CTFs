@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/txt_talk" android:textColor="@android:color/black" android:gravity="center_vertical" android:background="@drawable/em_context_menu_item_bg" android:padding="@dimen/chat_msg_menu_padding" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/collect" android:onClick="collect"/>
+    <include layout="@layout/in_divider"/>
+    <TextView android:textSize="@dimen/txt_talk" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/forward" android:background="@drawable/em_context_menu_item_bg" android:padding="@dimen/chat_msg_menu_padding" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/forward" android:onClick="forward"/>
+    <include layout="@layout/in_divider"/>
+    <TextView android:textSize="@dimen/txt_talk" android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/recall" android:background="@drawable/em_context_menu_item_bg" android:padding="@dimen/chat_msg_menu_padding" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/recall" android:onClick="recall"/>
+    <include layout="@layout/in_divider"/>
+    <TextView android:textSize="@dimen/txt_talk" android:textColor="@android:color/black" android:gravity="center_vertical" android:background="@drawable/em_context_menu_item_bg" android:padding="@dimen/chat_msg_menu_padding" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/delete" android:onClick="delete"/>
+</LinearLayout>

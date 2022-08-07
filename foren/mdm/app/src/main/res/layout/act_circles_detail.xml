@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.hy.frame.view.recycler.xRefreshView.XRefreshView android:id="@+id/xrv_parent" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.hy.frame.view.recycler.xRefreshView.XScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/circle_detail_imgArtCover" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/circles_detail_rlyHead" android:background="@color/white" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.hy.frame.view.RoundImageView android:id="@+id/circles_detail_imgAvatar" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="3dp" android:src="@mipmap/def_head"/>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+                            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="16sp" android:id="@+id/circles_detail_txtName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="匿名" android:singleLine="true"/>
+                                <ImageView android:id="@+id/circles_detail_imgVip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/icon_crown"/>
+                            </LinearLayout>
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                                <TextView android:textSize="@dimen/txt_smaller" android:textColor="@color/txt_gray" android:id="@+id/circles_detail_txtTime" android:paddingBottom="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1分钟前" android:singleLine="true"/>
+                                <TextView android:textSize="@dimen/txt_smaller" android:textColor="@color/txt_gray" android:id="@+id/circles_detail_txtDeviceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="来自iPhone" android:singleLine="true"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <include layout="@layout/in_divider"/>
+                    <TextView android:textSize="@dimen/txt_default" android:textColorHighlight="@color/green" android:id="@+id/circles_detail_txtContent" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:text="正文" android:lineSpacingExtra="3dp"/>
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:id="@+id/circles_detail_flyPic" android:padding="@dimen/padding_normal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <ImageView android:layout_gravity="center" android:id="@+id/circles_detail_imgAlone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_normal" android:adjustViewBounds="true"/>
+                            <com.hy.frame.view.MyGridView android:gravity="center" android:id="@+id/circle_detail_gridPic" android:paddingBottom="10dp" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="44dp" android:listSelector="@color/transparent" android:horizontalSpacing="3dp" android:verticalSpacing="3dp" android:stretchMode="columnWidth" android:numColumns="3"/>
+                        </FrameLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/circle_detail_llyArtWeb" android:background="@color/white" android:padding="@dimen/padding_normal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                            <WebView android:id="@+id/circles_detail_webArtContent" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:id="@+id/circle_detail_llyForward" android:background="@color/gray_e" android:padding="@dimen/padding_normal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10dp">
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                                <ImageView android:id="@+id/circles_detail_share_imgCover" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+                                <TextView android:textColorHighlight="@color/blue" android:ellipsize="end" android:id="@+id/circles_detail_share_txtContent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/padding_normal"/>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:id="@+id/circle_detail_llyShareExt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/circle_detail_llyExt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <include layout="@layout/in_divider"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:textColor="@color/gray_a" android:gravity="center" android:background="@color/white" android:padding="@dimen/padding_default" android:layout_width="60dp" android:layout_height="40dp" android:text="评论"/>
+                    <com.vsf2f.f2f.ui.view.MyListview android:id="@+id/circle_detail_lvComment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp"/>
+                    <TextView android:textSize="@dimen/txt_small" android:textColor="@color/gray_b" android:gravity="center" android:id="@+id/circle_detail_txtNoComment" android:background="@color/gray_f" android:padding="@dimen/padding_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/edit_height" android:text="@string/comment_hint"/>
+                </LinearLayout>
+            </LinearLayout>
+        </com.hy.frame.view.recycler.xRefreshView.XScrollView>
+    </com.hy.frame.view.recycler.xRefreshView.XRefreshView>
+    <include layout="@layout/in_divider"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/circles_i_ibtnReply" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:src="@drawable/icon_circles_reply"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="评论"/>
+            <TextView android:textColor="@color/gray_b" android:id="@+id/txt_Reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="0"/>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_circles_divider_vertical"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/circles_i_ibtnShare" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_circles_share"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="分享"/>
+            <TextView android:textColor="@color/gray_b" android:id="@+id/txt_Share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="0"/>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_circles_divider_vertical"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/circles_i_ibtnZan" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/img_Like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zan_selector"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="点赞"/>
+            <TextView android:textColor="@color/gray_b" android:id="@+id/txt_Like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="0"/>
+        </LinearLayout>
+        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_circles_divider_vertical"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/circles_i_ibtnSave" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:id="@+id/img_collection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/favorite_selector"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="收藏"/>
+            <TextView android:textColor="@color/gray_b" android:id="@+id/txt_collection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="0"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

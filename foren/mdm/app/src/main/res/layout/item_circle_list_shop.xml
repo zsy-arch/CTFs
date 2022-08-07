@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:id="@+id/item_circle_ext_shop" android:background="@drawable/bgm_circle_item_shop" android:paddingLeft="12dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/item_circle_shop_pic" android:background="@color/calculator_white" android:layout_width="50dp" android:layout_height="50dp" android:src="@mipmap/img_no_pic" android:scaleType="centerCrop"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="16sp" android:textColor="@color/btn_red" android:id="@+id/item_circle_shop_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="标题" android:maxLines="2"/>
+                <LinearLayout android:orientation="horizontal" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="10sp" android:textColor="@color/gray_a" android:id="@+id/item_circle_shop_sale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                    <TextView android:textSize="10sp" android:textColor="@color/gray_a" android:id="@+id/item_circle_shop_sold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text=""/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_circles_divider_vertical"/>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="75dp" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/item_circle_shop_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_collect_selector"/>
+                <TextView android:textSize="11sp" android:textColor="@color/txt_red_finace" android:id="@+id/item_circle_shop_collect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

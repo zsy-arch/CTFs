@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path background="files_root" layout_width="Android/data/${applicationId}/"/>
+    <external-path background="external_storage_root" layout_width="."/>
+</paths>

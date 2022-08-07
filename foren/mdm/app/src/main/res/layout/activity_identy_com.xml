@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:id="@+id/activity_identy_real" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="center" android:background="@color/gray_f" android:layout_width="match_parent" android:layout_height="70dp" android:text="认证企业身份，有助于我们营造真实的平台环境\10提高您对平台与用户的信心" android:lineSpacingExtra="5dp"/>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/tab_groupHeader" android:background="@color/white" android:layout_width="match_parent" android:layout_height="70dp">
+        <com.hy.frame.view.NavView android:id="@+id/tab1" android:tag="0" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_weight="1" app:navChecked="true" app:navText="基本信息" app:navTextColor="@drawable/txt_red_selector" app:navTextSize="12sp" app:navDraw="@drawable/icon_certify_com_info" app:navDrawPadding="12dp"/>
+        <com.hy.frame.view.NavView android:id="@+id/tab2" android:tag="1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_weight="1" app:navText="企业法人" app:navTextColor="@drawable/txt_red_selector" app:navTextSize="12sp" app:navDraw="@drawable/icon_certify_com_user" app:navDrawPadding="12dp"/>
+        <com.hy.frame.view.NavView android:id="@+id/tab3" android:tag="2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_weight="1" app:navText="营业执照" app:navTextColor="@drawable/txt_red_selector" app:navTextSize="12sp" app:navDraw="@drawable/icon_certify_com_permit" app:navDrawPadding="12dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="1dp">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1">
+            <View android:background="@color/gray_c" android:visibility="invisible" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <ImageView android:id="@+id/tab_state1" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_radio_red" android:layout_weight="1"/>
+            <View android:background="@color/gray_c" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1">
+            <View android:background="@color/gray_c" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <ImageView android:id="@+id/tab_state2" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_radio_empty" android:layout_weight="1"/>
+            <View android:background="@color/gray_c" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="30dp" android:layout_weight="1">
+            <View android:background="@color/gray_c" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <ImageView android:id="@+id/tab_state3" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/icon_radio_empty" android:layout_weight="1"/>
+            <View android:background="@color/gray_c" android:visibility="invisible" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.hy.frame.view.MyViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textColor="@color/txt_red" android:id="@+id/tv_failreason" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="失败原因："/>
+</LinearLayout>

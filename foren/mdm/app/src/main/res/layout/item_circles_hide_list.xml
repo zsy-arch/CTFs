@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/item_circles_draft" android:background="@color/white" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_normal">
+    <com.hy.frame.view.RoundImageView android:id="@+id/circles_h_imgAvatar" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:src="@mipmap/def_head"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/txt_medium" android:id="@+id/circles_h_txtName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_normal" android:singleLine="true" android:layout_alignParentTop="true"/>
+            <TextView android:textSize="@dimen/txt_small" android:textColor="@color/txt_gray" android:id="@+id/circles_h_txtTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@+id/circles_h_txtName" android:layout_alignLeft="@+id/circles_h_txtName"/>
+            <TextView android:textSize="@dimen/txt_small" android:textColor="@color/txt_gray" android:id="@+id/circles_h_txtDeviceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:singleLine="true" android:layout_toRightOf="@+id/circles_h_txtTime" android:layout_alignTop="@+id/circles_h_txtTime" android:layout_marginStart="20dp" android:layout_toEndOf="@+id/circles_h_txtTime"/>
+        </RelativeLayout>
+        <include layout="@layout/in_divider"/>
+        <TextView android:textSize="@dimen/txt_default" android:textColor="@color/gray_b" android:id="@+id/circles_h_txtContent" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_normal" android:lineSpacingExtra="3dp"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="start" android:id="@+id/circles_h_imgArtCover" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:adjustViewBounds="true"/>
+            <com.hy.frame.view.MyGridView android:gravity="center" android:id="@+id/circles_h_gridPic" android:paddingBottom="10dp" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_normal" android:listSelector="@color/transparent" android:horizontalSpacing="3dp" android:verticalSpacing="3dp" android:stretchMode="columnWidth" android:numColumns="3"/>
+            <ImageView android:id="@+id/circles_h_imgVideo" android:clickable="false" android:layout_width="match_parent" android:layout_height="150dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:scaleType="centerCrop"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/circles_h_imgPlay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ease_video_play_btn_small_nor"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/circles_i_ibtnReply" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:src="@drawable/icon_circles_reply"/>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_circles_divider_vertical"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/circles_i_ibtnShare" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_circles_share"/>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_circles_divider_vertical"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/circles_i_ibtnZan" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/img_Like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_circles_zan"/>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_circles_divider_vertical"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/circles_i_ibtnSave" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageView android:id="@+id/img_collection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_favorites"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

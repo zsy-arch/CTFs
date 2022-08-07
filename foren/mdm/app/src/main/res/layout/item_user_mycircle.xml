@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/in_space"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:paddingLeft="12dp" android:paddingTop="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.hy.frame.view.RoundImageView android:id="@+id/circle_i_ivAvatar" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginTop="3dp" android:layout_marginRight="8dp" android:src="@mipmap/def_head"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                    <TextView android:textSize="@dimen/txt_default" android:id="@+id/circle_i_txtNick" android:layout_width="0dp" android:layout_height="wrap_content" android:text="昵称" android:layout_weight="3" android:lineSpacingExtra="3dp"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_c" android:id="@+id/circle_i_txtUdName" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_default" android:text="iPhone" android:singleLine="true" android:layout_weight="2"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/txt_default" android:textColor="@color/gray_b" android:textColorHighlight="@color/blue" android:id="@+id/circle_i_txtContent" android:paddingLeft="@dimen/padding_normal" android:paddingTop="@dimen/padding_default" android:paddingRight="@dimen/padding_normal" android:paddingBottom="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="圈子正文" android:maxLines="3" android:lineSpacingExtra="3dp"/>
+            <TextView android:textColor="@color/blue" android:id="@+id/circles_i_txtContent_more" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="@dimen/padding_normal" android:text="全文"/>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/circles_i_flyPic" android:visibility="gone" android:layout_width="@dimen/grid_circle_width" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="start" android:id="@+id/circles_i_imgAlone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_normal" android:adjustViewBounds="true"/>
+                    <com.hy.frame.view.MyGridView android:gravity="center" android:id="@+id/circles_i_gridPic" android:focusable="false" android:layout_width="@dimen/grid_circle_width" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:listSelector="@color/transparent" android:horizontalSpacing="3dp" android:verticalSpacing="3dp" android:stretchMode="columnWidth" android:numColumns="3"/>
+                </FrameLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/circle_i_llyForward" android:background="@color/gray_e" android:padding="@dimen/padding_normal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@+id/circles_i_share_imgCover" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+                        <TextView android:textColorHighlight="@color/blue" android:ellipsize="end" android:id="@+id/circles_i_share_txtContent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/padding_normal" android:maxLines="4"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/circle_i_llyShareExt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/circle_i_llyExt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+            </FrameLayout>
+            <include layout="@layout/in_divider"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+                <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:id="@+id/circle_i_txtTime" android:layout_width="0dp" android:layout_height="wrap_content" android:text="2017年7月7日" android:layout_weight="1"/>
+                <TextView android:textColor="@color/blue" android:gravity="center" android:id="@+id/circle_btnDel" android:layout_width="60dp" android:layout_height="match_parent" android:text="@string/delete"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/circles_i_ibtnZan" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/img_Like" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/zan_selector"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:id="@+id/txt_Like" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="0" android:minEms="2"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/circles_i_ibtnReply" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/img_Reply" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_circles_reply"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:id="@+id/txt_Reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="0" android:minEms="2"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

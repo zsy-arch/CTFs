@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="30dp">
+        <TextView android:textSize="12dp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="可解冻:"/>
+        <TextView android:textSize="12dp" android:textColor="@color/blue" android:id="@+id/sharing_thaw_tvFrozen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="0"/>
+        <TextView android:textSize="12dp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="个"/>
+        <View android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <TextView android:textSize="12dp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="可用："/>
+        <TextView android:textSize="12dp" android:textColor="@color/txt_red_finace" android:id="@+id/sharing_thaw_tvEnable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="0"/>
+        <TextView android:textSize="10dp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="个"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp">
+        <TextView android:textColor="@color/black_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="解冻数量"/>
+        <EditText android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/sharing_thaw_etNum" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="50dp" android:text="" android:hint="请输入你要解冻的数量" android:layout_weight="1" android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:textSize="15sp" android:textColor="@color/black_deep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="申请理由"/>
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <EditText android:textColorHighlight="@color/green" android:gravity="top" android:id="@+id/sharing_thaw_etReason" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="请输入你要解冻的理由" android:minLines="4" android:maxLength="250" android:layout_weight="1" android:inputType="textMultiLine"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textColor="@color/white" android:id="@+id/sharing_thaw_btnCommit" android:background="@drawable/btn_red2_selector" android:layout_width="match_parent" android:layout_height="45dp" android:layout_margin="20dp" android:text="@string/btn_commit"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/activity_service_manage" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/in_divider"/>
+    <com.hy.frame.view.NavGroup android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/main_groupFooter" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentBottom="true">
+        <com.hy.frame.view.NavView android:id="@+id/nv_1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:navHorizontal="true" app:navChecked="true" app:navDrawRightWidth="20dp" app:navText="我出售的" app:navDraw="@drawable/service_order_sold_seletor" app:navDrawWidth="20dp" app:navDrawHeight="20dp" app:navCenter="true" style="@style/navDemandStyle"/>
+        <View android:background="@color/divider_gray" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <com.hy.frame.view.NavView android:id="@+id/nv_2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:navHorizontal="true" app:navDrawRightWidth="20dp" app:navText="我购买的" app:navDraw="@drawable/service_order_buy_seletor" app:navDrawWidth="20dp" app:navDrawHeight="20dp" app:navCenter="true" style="@style/navDemandStyle"/>
+    </com.hy.frame.view.NavGroup>
+    <include layout="@layout/in_divider"/>
+    <View android:background="@color/view_empty" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <include layout="@layout/in_divider"/>
+    <com.cdlinglu.common.HorizontalTabView android:id="@+id/htv_status" android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="44dp" app:htabBackground="@drawable/tab_item_selector" app:htabMargin="0dp" app:htabHeight="44dp" app:htabWidth="65dp" app:htabPadding="0dp" app:htabTextSize="14sp" app:htabTextColor="@drawable/close_item_selector"/>
+    <include layout="@layout/in_divider"/>
+    <com.cdlinglu.common.PullToRefreshView android:orientation="vertical" android:id="@+id/main_pull_refresh_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:animateLayoutChanges="true">
+        <ListView android:id="@+id/mlv_demand" android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/gray_e" android:dividerHeight="15dp" android:animateLayoutChanges="true"/>
+    </com.cdlinglu.common.PullToRefreshView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_pay" android:paddingLeft="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="12sp" android:textColor="@color/demand_sub" android:gravity="center" android:id="@+id/tv_checkall" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="全选" android:drawableLeft="@drawable/tab_orderpay_selector" android:drawablePadding="10dp"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/demand_sub" android:gravity="center" android:id="@+id/tv_cacel_order" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="取消订单"/>
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_payall" android:background="@color/red" android:paddingLeft="28dp" android:paddingRight="28dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="合并支付"/>
+    </LinearLayout>
+</LinearLayout>

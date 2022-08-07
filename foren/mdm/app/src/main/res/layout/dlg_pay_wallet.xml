@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:background="@drawable/shape_bgm_gray_5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@+id/pay_cancel" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_remove_x2"/>
+        <TextView android:textSize="15sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="面对面红包"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥ "/>
+            <TextView android:textSize="30sp" android:id="@+id/pay_txtMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="0.00"/>
+        </LinearLayout>
+        <TextView android:textColor="@color/gray_b" android:id="@+id/pay_txtType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="面对面钱包余额" android:drawableLeft="@drawable/icon_mdm_wallet" android:drawablePadding="6dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/pay_llFinger" android:background="@color/white" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_finger"/>
+                    <TextView android:textSize="18dp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="请验证指纹"/>
+                    <TextView android:textColor="@color/btn_green" android:id="@+id/pay_toPwd" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="40dp" android:text="输入密码"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.vsf2f.f2f.ui.view.NumPwdView android:id="@+id/pwdeditview" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="40dp" android:layout_marginTop="20dp" android:layout_marginRight="40dp"/>
+                <TextView android:textSize="10sp" android:textColor="@color/style_red" android:layout_gravity="center" android:id="@+id/pay_txtError" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+                <TextView android:textSize="12sp" android:textColor="@color/calculator_blue" android:layout_gravity="center" android:id="@+id/pay_tvFindpwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="20dp" android:text="找回支付密码"/>
+                <com.vsf2f.f2f.ui.view.NumKeyView android:id="@+id/keyboardview" android:paddingTop="2dp" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:shadowRadius="0" android:keyBackground="@drawable/btn_bottom_selector" android:keyTextColor="@color/black_deep"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

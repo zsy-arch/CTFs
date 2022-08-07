@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.easeui.widget.EaseChatMessageList android:id="@+id/message_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.easeui.widget.EaseVoiceRecorderView android:id="@+id/voice_recorder" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/chat_llyGood" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/chat_imgGoodpic" android:layout_width="60dp" android:layout_height="60dp" android:layout_margin="@dimen/padding_default" android:src="@drawable/img_empty"/>
+                <TextView android:id="@+id/chat_txtGoodname" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginRight="12dp" android:text="商品名称" android:lines="2" android:layout_toRightOf="@+id/chat_imgGoodpic"/>
+                <TextView android:textSize="@dimen/txt_small" android:textColor="@color/txt_red_finace" android:id="@+id/chat_txtGoodprice" android:padding="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥ 0.00" android:singleLine="true" android:layout_toRightOf="@+id/chat_imgGoodpic" android:layout_below="@+id/chat_txtGoodname"/>
+            </RelativeLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/txt_red" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/chat_txtGoodSend" android:background="@drawable/shape_line_red_10" android:layout_width="132dp" android:layout_height="30dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="发送宝贝"/>
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/chat_imgGoodClose" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_close_red"/>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/chat_llyNeed" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="@dimen/chat_msg_max_width">
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/txt_small" android:ellipsize="end" android:id="@+id/chat_txtNeedtitle" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="商品名称" android:singleLine="true"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/txt_small" android:textColor="@color/gray_b" android:ellipsize="end" android:id="@+id/chat_txtNeeddesc" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="需求详情" android:maxLines="2"/>
+                <LinearLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/txt_small" android:textColor="@color/btn_yellow" android:id="@+id/chat_txtNeedprice" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" android:singleLine="true"/>
+                    <TextView android:textSize="10sp" android:textColor="@color/gray_a" android:id="@+id/chat_txtNeedunit" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/ 小时" android:singleLine="true"/>
+                    <TextView android:textSize="@dimen/txt_small" android:textColor="@color/holo_red_light" android:gravity="center" android:id="@+id/chat_txtNeedmode" android:padding="3dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="线上服务" android:layout_weight="1"/>
+                    <TextView android:textSize="@dimen/txt_small" android:textColor="@color/white" android:gravity="center" android:id="@+id/chat_txtNeedbtn" android:background="@drawable/bgm_btn_selector" android:padding="3dp" android:layout_width="44dp" android:layout_height="22dp" android:text="抢单" android:singleLine="true"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:layout_marginTop="5dp">
+                    <ImageView android:id="@+id/chat_imgNeedaddr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icons_address_selector"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/txt_red_finace" android:ellipsize="end" android:id="@+id/chat_txtNeedaddr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="地址" android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/txt_red" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/chat_txtNeedSend" android:background="@drawable/shape_line_red_10" android:layout_width="132dp" android:layout_height="30dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="发送需求"/>
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/chat_imgNeedClose" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_close_red"/>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <com.easeui.widget.EaseChatInputMenu android:id="@+id/input_menu" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

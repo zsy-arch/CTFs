@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vsf2f.f2f.ui.view.richEditor.DeletableEditText xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="@color/gray_a" android:textColorHighlight="@color/blue" android:textColorHint="@color/gray_d" android:background="@android:color/transparent" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:hint="此处填写文字" android:cursorVisible="true" android:lineSpacingExtra="10dp"/>

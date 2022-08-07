@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/margin_default" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_normal">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/edit_height">
+                    <TextView android:textSize="14sp" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/consignee" android:layout_weight="1"/>
+                    <EditText android:id="@+id/user_addr_editName" android:background="@color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:maxLength="10" android:layout_weight="3" android:inputType="textPersonName"/>
+                </LinearLayout>
+                <include layout="@layout/in_divider"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/edit_height">
+                    <TextView android:textSize="14sp" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/shop_phone" android:layout_weight="1"/>
+                    <EditText android:id="@+id/user_addr_editPhone" android:background="@color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3" style="@style/editPhoneStyle"/>
+                </LinearLayout>
+                <include layout="@layout/in_divider"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/user_addr_llyCity" android:layout_width="match_parent" android:layout_height="@dimen/edit_height">
+                    <TextView android:textSize="14sp" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/address_city" android:layout_weight="1"/>
+                    <TextView android:textSize="14sp" android:gravity="center_vertical" android:id="@+id/user_addr_txtCity" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2.4"/>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/img_jump" android:background="@mipmap/ico_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_normal"/>
+                </LinearLayout>
+                <include layout="@layout/in_divider"/>
+                <TextView android:textSize="14sp" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/edit_height" android:text="@string/address_details"/>
+                <EditText android:textSize="14sp" android:textColor="#000000" android:gravity="top" android:id="@+id/user_addr_editDetail" android:background="@color/white" android:padding="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="请输入地址详细信息" android:lines="5" android:singleLine="false" android:maxLength="61"/>
+                <include layout="@layout/in_divider"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="设为默认" android:layout_weight="1"/>
+                <com.easeui.widget.EaseSwitchButton android:id="@+id/user_addr_switch1" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:switchStatus="0"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/user_addr_llyDel" android:background="@color/white" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp">
+                <TextView android:textColor="@color/txt_red_finace" android:layout_width="0dp" android:layout_height="wrap_content" android:text="删除地址" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

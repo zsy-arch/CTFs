@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingRight="@dimen/padding_default" android:layout_width="match_parent" android:layout_height="55dp">
+    <TextView android:textSize="@dimen/txt_default" android:textColor="@color/txt_black" android:id="@+id/tv_item_name" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_check_box" android:background="@drawable/edit_grey_stroke" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+        <TextView android:textSize="@dimen/txt_default" android:textColor="@color/txt_gray" android:gravity="center_vertical" android:id="@+id/tv_content" android:paddingLeft="@dimen/margin_normal" android:layout_width="0dp" android:layout_height="match_parent" android:singleLine="true" android:layout_weight="1"/>
+        <include layout="@layout/in_divider_vertical"/>
+        <ImageView android:padding="13dp" android:layout_width="45dp" android:layout_height="45dp" android:src="@mipmap/ico_triangle"/>
+    </LinearLayout>
+</LinearLayout>

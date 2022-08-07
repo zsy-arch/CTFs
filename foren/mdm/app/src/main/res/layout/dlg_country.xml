@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="400dp">
+    <TextView android:textSize="20sp" android:textColor="@color/white" android:gravity="center" android:background="@color/btn_red" android:padding="@dimen/padding_default" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="选择国家"/>
+    <ListView android:id="@+id/country_lv" android:background="@color/white" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:divider="#10000000" android:dividerHeight="1px" android:fastScrollEnabled="false"/>
+</LinearLayout>

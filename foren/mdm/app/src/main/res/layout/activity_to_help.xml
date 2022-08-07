@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/activity_to_help" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/icon_bespeak_cover" android:layout_width="match_parent" android:layout_height="200dp">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp">
+                <com.hy.frame.view.RotundityImageView android:layout_width="70dp" android:layout_height="70dp" android:src="@mipmap/def_head2"/>
+                <com.hy.frame.view.RotundityImageView android:id="@+id/iv_header" android:layout_width="66dp" android:layout_height="66dp" android:layout_margin="2dp"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="12sp" android:textColor="@color/calculator_white" android:id="@+id/tv_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="昵称" android:layout_below="@+id/iv_header" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="8sp" android:textColor="@color/calculator_white" android:gravity="center" android:id="@+id/tv_zhima" android:background="@drawable/bgm_zhima_code" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="100分"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                <TextView android:textSize="9sp" android:textColor="@color/calculator_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="认证: "/>
+                <com.vsf2f.f2f.ui.view.IdentyStateView android:id="@+id/identyStateView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="10dp">
+            <TextView android:textSize="14sp" android:textColor="@color/golden_fac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赏金："/>
+            <TextView android:textSize="14sp" android:textColor="@color/golden_fac" android:id="@+id/tv_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥0.0"/>
+        </LinearLayout>
+        <include layout="@layout/in_divider"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="10dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系方式"/>
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:id="@+id/tv_tel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="12345678910"/>
+        </LinearLayout>
+        <include layout="@layout/in_divider"/>
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:background="@color/white" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="46dp" android:text="帮助留言"/>
+            <EditText android:textSize="14sp" android:textColor="@color/demand_super" android:textColorHint="@color/gray_c" android:gravity="top" android:id="@+id/et_msg" android:background="@null" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="15dp" android:hint="@string/hint_message" android:minLines="3" android:maxLength="100"/>
+        </LinearLayout>
+        <Button android:textSize="16sp" android:textColor="@color/white" android:id="@+id/btn_sure" android:background="@drawable/btn_red_selector" android:layout_width="match_parent" android:layout_height="50dp" android:layout_margin="20dp" android:text="确认抢单"/>
+    </LinearLayout>
+</ScrollView>

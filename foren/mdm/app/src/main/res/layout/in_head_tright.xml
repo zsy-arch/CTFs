@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="?attr/appTitleColor" android:gravity="center" android:layout_gravity="right" android:id="@+id/head_vRight" android:background="@drawable/default_selector" android:padding="@dimen/padding_default" android:layout_width="wrap_content" android:layout_height="match_parent" android:minWidth="?attr/appHeaderHeight" android:text="@string/confirm" android:layout_alignParentRight="true" style="@style/txtWhiteStyle"/>

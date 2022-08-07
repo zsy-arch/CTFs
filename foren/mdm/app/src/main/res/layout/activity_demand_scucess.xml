@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/activity_lanche_scucess" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="62dp" android:src="@drawable/icon_successfully_red"/>
+    <TextView android:textSize="16sp" android:textColor="@color/demand_super" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:text="@string/demand_publish_scucess"/>
+    <TextView android:textSize="12sp" android:textColor="@color/txt_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="待托管支付成功后,需求才能完成发布"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="10dp" android:src="@drawable/content_icon_arrow"/>
+    <LinearLayout android:gravity="center" android:id="@+id/DemandPublishScucess_llyPay" android:background="@drawable/btn_red_selector_solid" android:paddingLeft="8dp" android:paddingTop="5dp" android:paddingRight="8dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="74dp">
+        <TextView android:textSize="14dp" android:textColor="@color/btn_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="托管资金" android:drawableLeft="@drawable/icon_demand_fundstrusteeship"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@color/gray_d" android:layout_width="match_parent" android:layout_height="50dp">
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="14sp" android:textColor="@color/calculator_blue" android:gravity="center" android:id="@+id/DemandPublishScucess_btnScan" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/scan_demand"/>
+        </LinearLayout>
+        <ImageView android:background="@drawable/icon_partingline_vertical" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:id="@+id/DemandPublishScucess_llyToFace" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="14dp" android:textColor="@color/calculator_blue" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="线下支付"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textColor="@color/gray_b" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="@string/pay_remind"/>
+</LinearLayout>

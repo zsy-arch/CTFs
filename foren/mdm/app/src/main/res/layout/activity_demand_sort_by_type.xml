@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/activity_demand_sort_by_type" android:background="@color/divider_gray_" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.hy.frame.view.NavGroup android:orientation="horizontal" android:id="@+id/sub_groupFooter" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp">
+        <com.hy.frame.view.NavView android:id="@+id/nv_smart" android:tag="0" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:navHorizontal="true" app:navChecked="true" app:navDrawRight="@drawable/content_icon_triangle" app:navText="@string/nav_smart" app:navTextSize="12sp" app:navDrawWidth="0dp" app:navDrawHeight="0dp" app:navCenter="true" style="@style/navDemandStyleNoSe"/>
+        <View android:background="@color/divider_gray" android:layout_width="1px" android:layout_height="match_parent"/>
+        <com.hy.frame.view.NavView android:id="@+id/nv_servicetype" android:tag="2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:navHorizontal="true" app:navDrawRight="@drawable/content_icon_triangle" app:navText="@string/nav_servicetype" app:navTextSize="12sp" app:navDrawWidth="0dp" app:navDrawHeight="0dp" app:navCenter="true" style="@style/navDemandStyleNoSe"/>
+    </com.hy.frame.view.NavGroup>
+    <include layout="@layout/in_divider"/>
+    <com.hy.frame.view.RefreshRecyclerView android:id="@+id/mlv_demand" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

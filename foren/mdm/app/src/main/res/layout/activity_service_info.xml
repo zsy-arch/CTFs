@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ScrollView android:orientation="vertical" android:background="@color/gray_f" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/img_service_info_head" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="100dp" android:layout_marginTop="5dp">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="25dp">
+                            <TextView android:textColor="@color/gray_a" android:id="@+id/ServiceInfo_tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="匿名"/>
+                            <ImageView android:id="@+id/ServiceInfo_ivSex" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:src="@drawable/switch_sex2_selector"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:id="@+id/ServiceInfo_tvAge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp"/>
+                            <ImageView android:id="@+id/ServiceInfo_ivVip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:src="@drawable/icon_crown"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="10sp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="认证： "/>
+                            <com.vsf2f.f2f.ui.view.IdentyStateView android:id="@+id/identyStateView" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+                            <ImageView android:background="@color/black" android:layout_width="3dp" android:layout_height="12dp"/>
+                            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:gravity="center_vertical" android:id="@+id/ServiceInfo_txtTitle" android:paddingTop="2dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:text="服务名称" android:layout_weight="1"/>
+                            <com.cdlinglu.server.audio.MusicPlayer android:id="@+id/ServiceInfo_VoicePlayer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="5dp" android:layout_marginBottom="10dp">
+                            <TextView android:textSize="14sp" android:textColor="@color/txt_red" android:gravity="center_vertical" android:id="@+id/ServiceInfo_txtPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="￥0.00 元 "/>
+                            <TextView android:textSize="12sp" android:textColor="@color/gray_a" android:gravity="center_vertical" android:id="@+id/ServiceInfo_txtUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="/ 次"/>
+                            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="center_vertical" android:id="@+id/ServiceInfo_txtNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="（库存：10）"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <FrameLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25dp" android:layout_marginTop="80dp">
+                    <com.hy.frame.view.RotundityImageView android:layout_width="60dp" android:layout_height="60dp" android:layout_marginBottom="3dp" android:src="@color/white"/>
+                    <com.hy.frame.view.RotundityImageView android:id="@+id/ServiceInfo_rivUserhead" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:src="@mipmap/def_head"/>
+                    <TextView android:textSize="8dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/ServiceInfo_tvZhima" android:background="@drawable/bgm_zhima_code2" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                </FrameLayout>
+                <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/iv_certify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="60dp" android:src="@drawable/img_certify_selector"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="15dp">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_needs_info_paytype"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/gray_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="服务/共享方式："/>
+                    <TextView android:textSize="12dp" android:textColor="@color/gray_a" android:id="@+id/tv_service_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="线上服务"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="5dp">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_needs_info_modetype"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/gray_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="服务/共享类型："/>
+                    <TextView android:textSize="12dp" android:textColor="@color/gray_a" android:id="@+id/tv_service_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="生活服务"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="5dp" android:layout_marginBottom="15dp">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_needs_info_place"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/gray_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="服务/共享范围："/>
+                    <TextView android:textSize="12dp" android:textColor="@color/gray_a" android:id="@+id/tv_service_area" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="广州市 天河区"/>
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/in_divider"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="5dp">
+                <ImageView android:background="@color/black" android:layout_width="3dp" android:layout_height="12dp" android:layout_marginLeft="20dp"/>
+                <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:gravity="center" android:paddingLeft="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="服务描述"/>
+            </LinearLayout>
+            <include layout="@layout/in_divider"/>
+            <TextView android:textSize="14sp" android:textColor="@color/txt_gray" android:ellipsize="end" android:id="@+id/ServiceInfo_txtContent" android:background="@color/white" android:paddingLeft="30dp" android:paddingTop="12dp" android:paddingRight="20dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minLines="2"/>
+            <include layout="@layout/in_divider"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="5dp">
+                <ImageView android:background="@color/black" android:layout_width="3dp" android:layout_height="12dp" android:layout_marginLeft="20dp"/>
+                <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:paddingLeft="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="图片展示"/>
+            </LinearLayout>
+            <include layout="@layout/in_divider"/>
+            <com.hy.frame.view.MyGridView android:id="@+id/ServiceInfo_mgvPic" android:background="@color/white" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="2dp" android:verticalSpacing="2dp" android:numColumns="4"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="20dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="30dp" android:layout_width="match_parent" android:layout_height="44dp">
+                    <TextView android:textColor="@color/gray_a" android:layout_width="0dp" android:layout_height="wrap_content" android:text="联  系  人" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/gray_b" android:id="@+id/ServiceInfo_tvTelor" android:layout_width="0dp" android:layout_height="wrap_content" android:text="匿名" android:layout_weight="3"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="30dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="1px">
+                    <TextView android:textColor="@color/gray_a" android:layout_width="0dp" android:layout_height="wrap_content" android:text="联系电话" android:layout_weight="1"/>
+                    <TextView android:textColor="@color/gray_b" android:id="@+id/ServiceInfo_tvTel" android:layout_width="0dp" android:layout_height="wrap_content" android:text="123456789" android:layout_weight="3"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/in_divider"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_mine" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+        <com.hy.frame.view.NavView android:id="@+id/ServiceInfo_nvState" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:navHorizontal="true" app:navText="@string/up_service" app:navTextColor="@color/txt_red" app:navTextSize="15dp" app:navCenter="true"/>
+        <include layout="@layout/in_divider_vertical"/>
+        <com.hy.frame.view.NavView android:id="@+id/ServiceInfo_nvEdit" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:navHorizontal="true" app:navText="@string/update_service" app:navTextColor="@color/blue" app:navTextSize="15dp" app:navDrawWidth="0dp" app:navCenter="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_opre" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+        <com.hy.frame.view.NavView android:id="@+id/ServiceInfo_nvChat" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:navHorizontal="true" app:navText="咨询我" app:navTextColor="@color/blue" app:navTextSize="15dp" app:navDraw="@drawable/icon_demand_chat" app:navDrawWidth="25dp" app:navDrawHeight="25dp" app:navCenter="true"/>
+        <include layout="@layout/in_divider_vertical"/>
+        <com.hy.frame.view.NavView android:id="@+id/ServiceInfo_nvHelp" android:background="@color/txt_red" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:navHorizontal="true" app:navText="@string/do_bespeak" app:navTextColor="@color/white" app:navTextSize="15dp" app:navDrawWidth="0dp" app:navCenter="true"/>
+    </LinearLayout>
+</LinearLayout>

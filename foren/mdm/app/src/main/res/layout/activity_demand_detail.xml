@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/activity_demand_detail" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/in_divider"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44dp">
+            <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="名称"/>
+            <TextView android:textSize="12sp" android:textColor="@color/demand_super" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_demand_title" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="50dp" android:text=""/>
+        </LinearLayout>
+        <include layout="@layout/in_divider"/>
+        <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/tab_descripe"/>
+        <include layout="@layout/in_divider"/>
+        <TextView android:textSize="12sp" android:textColor="@color/txt_gray" android:id="@+id/tv_content" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100dp" android:text=""/>
+        <com.hy.frame.view.MyGridView android:id="@+id/mgv_pic" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="4dp" android:verticalSpacing="4dp" android:numColumns="4"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="12dp" android:paddingTop="9dp" android:paddingRight="12dp" android:paddingBottom="9dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.cdlinglu.server.audio.MusicPlayer android:id="@+id/voicePlayer" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <TextView android:textSize="10sp" android:textColor="@color/gray_b" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_address" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/input_address" android:lines="1" android:drawableLeft="@drawable/icon_position"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <com.hy.frame.view.KeyValueView android:gravity="center_vertical" android:id="@+id/DemandDetail_kvType" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="45dp" app:kvKey="@string/demand_type" app:kvKeyColor="@color/demand_super" app:kvValueRight="true" style="@style/settingsKvStyleNoRight"/>
+            <include layout="@layout/in_divider"/>
+            <com.hy.frame.view.KeyValueView android:gravity="center_vertical" android:id="@+id/DemandDetail_kvMode" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="45dp" app:kvKey="服务/共享方式" app:kvKeyColor="@color/demand_super" app:kvValueRight="true" style="@style/settingsKvStyleNoRight"/>
+            <include layout="@layout/in_divider"/>
+            <com.hy.frame.view.KeyValueView android:gravity="center_vertical" android:id="@+id/DemandDetail_kvPrice" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="45dp" app:kvKey="价格" app:kvKeyColor="@color/demand_super" app:kvValue="￥0.00/次" app:kvValueRight="true" style="@style/settingsKvStyleNoRight"/>
+            <include layout="@layout/in_divider"/>
+            <com.hy.frame.view.KeyValueView android:gravity="center_vertical" android:id="@+id/DemandDetail_kvTime" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="45dp" app:kvKey="发布时间" app:kvValue="2017-07-07 23:59:59" app:kvValueRight="true" style="@style/settingsKvStyleNoRight"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

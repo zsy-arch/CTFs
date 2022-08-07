@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/group_parent" android:background="@color/white" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+        <ImageView android:id="@+id/group_head" android:layout_width="50dp" android:layout_height="50dp" android:src="@mipmap/def_head"/>
+        <TextView android:textSize="18sp" android:id="@+id/group_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text=""/>
+    </LinearLayout>
+    <ImageView android:id="@+id/group_code" android:layout_width="250dp" android:layout_height="250dp" android:layout_margin="20dp"/>
+    <TextView android:textSize="11dp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="温馨提示：下载面对面 APP，打开扫一扫加群"/>
+</LinearLayout>

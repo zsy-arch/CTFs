@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/padding_default">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/lly_ForwardTxtImg" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/goods_manage_i_imgPic" android:background="@color/gray_f" android:layout_width="75dp" android:layout_height="75dp" android:src="@drawable/img_empty"/>
+                <TextView android:textSize="@dimen/txt_smaller" android:textColor="@color/white" android:gravity="center" android:id="@+id/goods_manage_i_txtRecom" android:background="@color/holo_red_light" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="推荐" android:layout_alignRight="@+id/goods_manage_i_imgPic" android:layout_alignBottom="@+id/goods_manage_i_imgPic"/>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/padding_default" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textColor="@color/gray_a" android:id="@+id/goods_manage_i_txtTitle" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="商品标题" android:lines="2"/>
+                <TextView android:textSize="10sp" android:textColor="@color/red" android:id="@+id/goods_manage_i_txtDiscount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_normal" android:text="" android:singleLine="true"/>
+                <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="10sp" android:textColor="@color/btn_red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥" android:singleLine="true"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/txt_red_finace" android:id="@+id/goods_manage_i_txtPrice" android:layout_width="0dp" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:layout_weight="2"/>
+                    <TextView android:textSize="10sp" android:textColor="@color/txt_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collection" android:singleLine="true"/>
+                    <TextView android:textSize="10sp" android:textColor="@color/txt_gray" android:id="@+id/goods_manage_i_txtFavorites" android:layout_width="0dp" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:layout_weight="1"/>
+                    <TextView android:textSize="10sp" android:textColor="@color/txt_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_normal" android:text="@string/sales" android:singleLine="true"/>
+                    <TextView android:textSize="10sp" android:textColor="@color/txt_gray" android:id="@+id/goods_manage_i_txtSales" android:layout_width="0dp" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:layout_weight="1"/>
+                    <TextView android:textSize="10sp" android:textColor="@color/txt_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/inventory" android:singleLine="true"/>
+                    <TextView android:textSize="10sp" android:textColor="@color/txt_gray" android:id="@+id/goods_manage_i_txtStore" android:layout_width="0dp" android:layout_height="wrap_content" android:text="0" android:singleLine="true" android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/padding_normal" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <ImageView android:id="@+id/goods_manage_i_imgCheck" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/radio_red_selector"/>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/in_divider"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp">
+            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="center" android:id="@+id/goods_manage_i_txtLook" android:layout_width="0dp" android:layout_height="match_parent" android:text="预览" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="center" android:id="@+id/goods_manage_i_txtEdit" android:layout_width="0dp" android:layout_height="match_parent" android:text="编辑" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="center" android:id="@+id/goods_manage_i_txtChange" android:layout_width="0dp" android:layout_height="match_parent" android:text="下架" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="center" android:id="@+id/goods_manage_i_txtRecommend" android:layout_width="0dp" android:layout_height="match_parent" android:text="推荐" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="center" android:id="@+id/goods_manage_i_txtDelete" android:layout_width="0dp" android:layout_height="match_parent" android:text="删除" android:layout_weight="1"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:gravity="center" android:id="@+id/goods_manage_i_txtShare" android:layout_width="0dp" android:layout_height="match_parent" android:text="分享" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

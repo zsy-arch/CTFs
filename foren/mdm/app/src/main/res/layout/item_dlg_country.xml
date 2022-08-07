@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18dp" android:gravity="center" android:id="@+id/country_i_txtCountryName" android:padding="@dimen/padding_default" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="国家"/>
+    <include layout="@layout/in_divider"/>
+</LinearLayout>

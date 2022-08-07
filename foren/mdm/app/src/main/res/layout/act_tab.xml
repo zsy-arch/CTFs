@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="?attr/appBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/in_header"/>
+    <com.hy.frame.view.NavGroup android:orientation="horizontal" android:id="@+id/tab_groupHeader" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="40dp"/>
+    <FrameLayout android:id="@+id/base_flyMain" android:background="@color/theme_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/in_loading"/>
+        <include layout="@layout/act_recycler_refresh"/>
+    </FrameLayout>
+</LinearLayout>

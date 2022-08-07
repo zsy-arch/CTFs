@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginRight="@dimen/margin_normal">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/shape_search" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textColor="@color/pic_choice_blue" android:id="@+id/pictrue_btnCamera" android:background="@drawable/btn_white_selector_top" android:layout_width="match_parent" android:layout_height="@dimen/bottom_bar_height" android:text="拍照"/>
+        <View android:background="@color/divider_gray" android:layout_width="match_parent" android:layout_height="1px"/>
+        <Button android:textColor="@color/pic_choice_blue" android:id="@+id/pictrue_btnPhoto" android:background="@drawable/btn_white_selector_bottom" android:layout_width="match_parent" android:layout_height="@dimen/bottom_bar_height" android:text="从手机相册中上传"/>
+    </LinearLayout>
+    <View android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/padding_normal"/>
+    <Button android:textColor="@color/pic_choice_blue" android:id="@+id/pictrue_btnCancel" android:background="@drawable/btn_white_selector" android:layout_width="match_parent" android:layout_height="@dimen/bottom_bar_height" android:text="取消"/>
+</LinearLayout>

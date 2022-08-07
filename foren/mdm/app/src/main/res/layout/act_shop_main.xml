@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/shop_main_llyShopInfo" android:background="@color/theme" android:paddingTop="25dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="90dp">
+                    <com.hy.frame.view.RotundityImageView android:id="@+id/shop_main_imgShopLogo" android:padding="2dp" android:layout_width="@dimen/avatar_size_normal" android:layout_height="@dimen/avatar_size_normal"/>
+                    <ImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/shop_main_imgVipLogo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_crown"/>
+                </FrameLayout>
+                <TextView android:textSize="16sp" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/shop_main_txtShopName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="" android:singleLine="true"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_e" android:ellipsize="end" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账户:" android:singleLine="true"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_e" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/shop_main_txtUserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="***********" android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.hy.frame.view.NavView android:id="@+id/shop_main_navFinanceCenter" android:layout_width="match_parent" android:layout_height="50dp" app:navText="@string/finance_title" app:navDraw="@drawable/icon_shop_financial" style="@style/mineTabNextStyle"/>
+            <com.hy.frame.view.NavView android:id="@+id/shop_main_navShopdata" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="1px" app:navText="@string/shop_data" app:navDraw="@drawable/icon_shop_data" style="@style/mineTabNextStyle"/>
+            <com.hy.frame.view.NavView android:id="@+id/shop_main_navShopOrder" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="@dimen/padding_default" app:navText="@string/shop_my_order" app:navDraw="@drawable/icon_shop_order" style="@style/mineTabNextStyle"/>
+            <com.hy.frame.view.NavView android:id="@+id/shop_main_navGoodsManager" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="@dimen/padding_default" app:navText="@string/shop_sale_manager" app:navDraw="@drawable/icon_shop_goods" style="@style/mineTabNextStyle"/>
+            <com.hy.frame.view.NavView android:id="@+id/shop_main_navShopManager" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="1px" app:navText="@string/shop_edit" app:navDraw="@drawable/icon_shop_compile" style="@style/mineTabNextStyle"/>
+            <com.hy.frame.view.NavView android:id="@+id/shop_main_navShopPublish" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="1px" app:navText="@string/release_good" app:navDraw="@drawable/icon_shop_publish" style="@style/mineTabNextStyle"/>
+            <com.hy.frame.view.NavView android:id="@+id/shop_main_navShopPreview" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="@dimen/padding_default" app:navText="@string/shop_preview" app:navDraw="@drawable/icon_shop_preview" style="@style/mineTabNextStyle"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

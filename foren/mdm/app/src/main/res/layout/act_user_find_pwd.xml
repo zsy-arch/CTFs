@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:paddingLeft="20dp" android:paddingTop="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/edit_height" android:layout_marginTop="@dimen/margin_normal">
+        <TextView android:textColor="@color/gray_b" android:gravity="center_vertical" android:id="@+id/find_pwd_imgPhone" android:layout_width="50dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_normal" android:text="@string/phone_num"/>
+        <TextView android:textSize="@dimen/txt_small" android:textColor="@color/gray_a" android:gravity="center" android:id="@+id/find_pwd_txtPhone" android:layout_width="30dp" android:layout_height="match_parent" android:text="86"/>
+        <EditText android:layout_gravity="center_vertical" android:id="@+id/find_pwd_edtPhone" android:layout_width="0dp" android:layout_height="match_parent" android:hint="输入已绑定的手机号" android:layout_weight="1" style="@style/editPhoneStyle"/>
+        <ImageButton android:id="@+id/findpwd_imbClearEdit" android:background="@android:color/transparent" android:visibility="invisible" android:layout_width="@dimen/edit_height" android:layout_height="@dimen/edit_height" android:src="@drawable/ease_search_clear"/>
+    </LinearLayout>
+    <include layout="@layout/in_divider"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/edit_height" android:layout_marginTop="@dimen/padding_normal">
+        <TextView android:textColor="@color/gray_b" android:gravity="center_vertical" android:layout_width="80dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_normal" android:text="短信验证码"/>
+        <EditText android:layout_gravity="center_vertical" android:id="@+id/find_pwd_edtCode" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/code_hint" android:layout_weight="1" style="@style/editCodePStyle"/>
+        <com.hy.frame.view.TimerButton android:textColor="@color/white" android:id="@+id/find_pwd_btnGetCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/code_get" android:hint="@string/code_get_hint" style="@style/btnCodeStyle"/>
+    </LinearLayout>
+    <include layout="@layout/in_divider"/>
+    <LinearLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/edit_height" android:layout_marginTop="@dimen/padding_normal">
+        <TextView android:textColor="@color/gray_b" android:gravity="center_vertical" android:layout_width="80dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_normal" android:text="重置密码"/>
+        <EditText android:layout_gravity="center_vertical" android:id="@+id/find_pwd_edtNewPwd" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/pwd_new_hint" android:digits="@string/digits_password" android:layout_weight="1" android:inputType="textPassword" style="@style/editPwdStyle"/>
+        <ImageButton android:id="@+id/findpwd_imbPwdShow1" android:background="@android:color/transparent" android:layout_width="@dimen/edit_height" android:layout_height="@dimen/edit_height" android:src="@drawable/img_pwd_selector"/>
+    </LinearLayout>
+    <include layout="@layout/in_divider"/>
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/edit_height" android:layout_marginTop="@dimen/padding_normal">
+        <TextView android:textColor="@color/gray_b" android:gravity="center_vertical" android:layout_width="80dp" android:layout_height="match_parent" android:layout_marginLeft="@dimen/margin_normal" android:text="重复密码"/>
+        <EditText android:layout_gravity="center_vertical" android:id="@+id/find_pwd_edtAffirmPwd" android:layout_width="0dp" android:layout_height="match_parent" android:hint="@string/login_pwd_affirm_hint" android:digits="@string/digits_password" android:layout_weight="1" android:inputType="textPassword" style="@style/editPwdStyle"/>
+        <ImageButton android:id="@+id/findpwd_imbPwdShow2" android:background="@android:color/transparent" android:layout_width="@dimen/edit_height" android:layout_height="@dimen/edit_height" android:src="@drawable/img_pwd_selector"/>
+    </LinearLayout>
+    <include layout="@layout/in_divider"/>
+    <Button android:textColor="@color/white" android:id="@+id/find_pwd_btnConfirm" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="@dimen/margin_normal" android:layout_marginTop="70dp" android:layout_marginRight="@dimen/margin_normal" android:text="@string/find_pwd_btn" style="@style/btnStyle"/>
+</LinearLayout>

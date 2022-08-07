@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="@dimen/padding_big" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:textSize="@dimen/txt_medium" android:textColor="@color/black" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/edit_content" android:background="@color/white" android:padding="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/personal_profile" android:lines="10" android:maxLength="50"/>
+    <Button android:id="@+id/btn_ensure" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="20dp" android:text="@string/ensure" style="@style/btnStyle"/>
+</LinearLayout>

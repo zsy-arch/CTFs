@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/albumback" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/headview" android:background="@color/red" android:paddingLeft="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:textSize="14sp" android:textColor="@color/white" android:id="@+id/cancel" android:background="@drawable/plugin_camera_ok_btn_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/camera_cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </LinearLayout>
+        <Button android:textColor="@color/white" android:id="@+id/ok_button" android:background="@drawable/plugin_camera_ok_btn_state" android:layout_width="90dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="确定" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </LinearLayout>
+    <GridView android:id="@+id/myGrid" android:background="@color/albumback" android:padding="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="2dp" android:horizontalSpacing="10dp" android:verticalSpacing="10dp" android:numColumns="3" android:layout_below="@+id/headview" android:layout_centerInParent="true"/>
+    <TextView android:textColor="@color/black" android:gravity="center" android:id="@+id/myText" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_photo"/>
+</RelativeLayout>

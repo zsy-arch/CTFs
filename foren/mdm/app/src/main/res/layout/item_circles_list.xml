@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/llyParent" android:background="@color/white" android:padding="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/item_cirlce" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.hy.frame.view.RoundImageView android:id="@+id/circles_i_imgAvatar" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:src="@mipmap/def_head"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/txt_medium" android:gravity="center" android:id="@+id/circles_i_txtName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_normal" android:text="昵称" android:singleLine="true"/>
+                    <ImageView android:id="@+id/circles_i_imgVip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/icon_crown"/>
+                    <ImageView android:id="@+id/circles_i_imgShop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:src="@drawable/icon_circles_shop"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+                    <TextView android:textSize="11sp" android:textColor="@color/txt_gray" android:gravity="center" android:id="@+id/circles_i_txtTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="08月15" android:singleLine="true"/>
+                    <TextView android:textSize="11sp" android:textColor="@color/txt_gray" android:gravity="center" android:id="@+id/circles_i_txtDeviceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="来自HUAWEI P9" android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/txt_default" android:textColor="@color/gray_b" android:textColorHighlight="@color/blue" android:id="@+id/circles_i_txtContent" android:paddingLeft="@dimen/padding_normal" android:paddingTop="@dimen/padding_default" android:paddingRight="@dimen/padding_normal" android:paddingBottom="@dimen/padding_normal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="圈子正文" android:maxLines="3" android:lineSpacingExtra="3dp"/>
+            <TextView android:textColor="@color/blue" android:id="@+id/circles_i_txtContent_more" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="@dimen/padding_normal" android:text="全文"/>
+            <FrameLayout android:id="@+id/circles_i_flyPic" android:visibility="gone" android:layout_width="@dimen/grid_circle_width" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/circles_i_imgAlone" android:clickable="false" android:layout_width="250dp" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_normal" android:adjustViewBounds="true"/>
+                <com.hy.frame.view.MyGridView android:gravity="center" android:id="@+id/circles_i_gridPic" android:focusable="false" android:layout_width="@dimen/grid_circle_width" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:horizontalSpacing="3dp" android:verticalSpacing="3dp" android:stretchMode="columnWidth" android:numColumns="3"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/circle_i_llyForward" android:background="@color/gray_e" android:padding="@dimen/padding_normal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/circles_i_share_imgCover" android:layout_width="66dp" android:layout_height="66dp" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+                    <TextView android:textSize="13sp" android:textColorHighlight="@color/blue" android:ellipsize="end" android:id="@+id/circles_i_share_txtContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/padding_normal" android:maxLines="4"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/circle_i_llyShareExt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/circle_i_llyExt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+            <include layout="@layout/in_divider"/>
+            <include layout="@layout/circle_detail_foots"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/item_adv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/gray_e" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16sp" android:gravity="center" android:layout_width="match_parent" android:layout_height="40dp" android:text="发布"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="10sp" android:id="@+id/release_btnDemand" android:background="@drawable/btn_white_selector" android:paddingTop="5dp" android:paddingBottom="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:scaleType="matrix" android:text="需求" android:drawableTop="@drawable/icon_release_demand" android:layout_weight="1"/>
+        <Button android:textSize="10sp" android:id="@+id/release_btnService" android:background="@drawable/btn_white_selector" android:paddingTop="5dp" android:paddingBottom="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:scaleType="matrix" android:text="共享" android:drawableTop="@drawable/icon_release_service" android:layout_weight="1"/>
+        <Button android:textSize="10sp" android:id="@+id/release_btnCircle" android:background="@drawable/btn_white_selector" android:paddingTop="5dp" android:paddingBottom="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:scaleType="matrix" android:text="朋友圈" android:drawableTop="@drawable/icon_release_circles" android:layout_weight="1"/>
+        <Button android:textSize="10sp" android:id="@+id/release_btnProduct" android:background="@drawable/btn_white_selector" android:paddingTop="5dp" android:paddingBottom="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="产品" android:drawableTop="@drawable/icon_release_goods" android:layout_weight="1" android:onClick="onTabClicked"/>
+    </LinearLayout>
+    <View android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="2dp"/>
+    <Button android:textSize="16sp" android:id="@+id/txt_cancel" android:background="@drawable/btn_bottom_selector" android:layout_width="match_parent" android:layout_height="@dimen/bottom_bar_height" android:text="取消"/>
+</LinearLayout>

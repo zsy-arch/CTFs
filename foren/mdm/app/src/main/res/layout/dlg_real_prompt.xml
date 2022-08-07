@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:id="@+id/ll_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_dlg" android:background="@drawable/shape_white_round_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.hy.frame.view.RotundityImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:src="@drawable/icon_circle_addgood"/>
+        <TextView android:textSize="16sp" android:textColor="@color/txt_black" android:ellipsize="end" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="实名认证" android:lines="1" android:drawablePadding="10dp"/>
+        <TextView android:textSize="12sp" android:textColor="@color/demand_sub" android:ellipsize="end" android:id="@+id/tv_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="只有实名认证 才可以发布服务赚钱哦！" android:lines="1"/>
+        <TextView android:textSize="18sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_sure" android:background="@drawable/shape_yellow_round_20" android:paddingLeft="50dp" android:paddingRight="50dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="20dp" android:layout_marginBottom="30dp" android:text="立即认证"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/btn_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:src="@mipmap/ico_close"/>
+</LinearLayout>

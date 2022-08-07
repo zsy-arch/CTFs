@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rly_parent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager android:id="@+id/wel_viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_wel_dot" android:layout_width="wrap_content" android:layout_height="10dp" android:layout_marginBottom="24dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <Button android:id="@+id/btn_open_now" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/margin_big" android:layout_marginBottom="@dimen/margin_big" android:text="@string/open_now" android:layout_above="@+id/ll_wel_dot" android:layout_centerHorizontal="true" android:duration="2000" android:fromAlpha="0" android:toAlpha="1" style="@style/btnStyle"/>
+</RelativeLayout>

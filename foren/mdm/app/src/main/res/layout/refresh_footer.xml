@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/refresh_footer_view" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@+id/refresh_footer_progressBar" android:visibility="invisible" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="@dimen/margin_big"/>
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/refresh_footer_imgArrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="20dp" android:src="@drawable/refresh_arrow_down_short"/>
+        <TextView android:textSize="13sp" android:id="@+id/refresh_footer_txtHint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pull_to_refresh_footer_hint_label" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp"/>
+</LinearLayout>

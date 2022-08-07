@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="true">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/padding_normal">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/contact_imgHead" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginLeft="12dp" android:src="@mipmap/def_head" android:scaleType="fitXY"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="16sp" android:id="@+id/contact_txtNickName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="123"/>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="5dp">
+                <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="账号："/>
+                <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:id="@+id/contact_txtUserName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <LinearLayout android:id="@+id/contact_llReal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp">
+                    <TextView android:textSize="12sp" android:textColor="@color/blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="实名："/>
+                    <TextView android:textSize="12sp" android:textColor="@color/gray_b" android:id="@+id/contact_txtRealName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_circles_divider_vertical"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="60dp" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <TextView android:textSize="13sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="人脉"/>
+                <View android:background="@color/gray_d" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="3dp" android:layout_marginBottom="3dp"/>
+                <TextView android:textSize="@dimen/txt_small" android:textColor="@color/gray_a" android:id="@+id/contact_txtPeople" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1亿人"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

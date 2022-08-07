@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/frame_web_video" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linear_filechooser_btn_pool" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:id="@+id/bt_filechooser_flush" android:background="@drawable/theme_adrbar_btn_refresh_normal0" android:layout_width="30dp" android:layout_height="30dp" android:layout_weight="1" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:id="@+id/bt_filechooser_back" android:background="@drawable/theme_toolbar_btn_back_fg_normal0" android:layout_width="30dp" android:layout_height="30dp" android:layout_weight="1" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <Button android:id="@+id/bt_filechooser_home" android:background="@drawable/theme_toolbar_btn_home_fg_normal2" android:layout_width="30dp" android:layout_height="30dp" android:layout_weight="1" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.cdlinglu.utils.x5WebView.X5WebView android:id="@+id/web_filechooser" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/linear_filechooser_btn_pool"/>
+</RelativeLayout>

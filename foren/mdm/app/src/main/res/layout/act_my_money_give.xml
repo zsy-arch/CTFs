@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <com.hy.frame.view.RoundImageView android:id="@+id/mymoney_ivAvatar" android:layout_width="44dp" android:layout_height="44dp" android:src="@mipmap/def_head2"/>
+            <TextView android:id="@+id/mymoney_ivNick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="昵称"/>
+            <TextView android:textSize="12sp" android:textColor="@color/gray_c" android:id="@+id/mymoney_ivName" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="123456789"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/mymoney_llGiveMoney" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center" android:background="@drawable/btn_underline_selector" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginLeft="12dp" android:text="转赠金币"/>
+            <include layout="@layout/in_divider"/>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp">
+                    <TextView android:textSize="13sp" android:textStyle="bold" android:gravity="center" android:layout_width="wrap_content" android:layout_height="44dp" android:text="￥"/>
+                    <EditText android:textColor="@color/txt_red_finace" android:textColorHint="@color/red" android:id="@+id/mymoney_etGiveMoney" android:background="@drawable/line_edittext" android:layout_width="match_parent" android:layout_height="33dp" android:layout_marginLeft="5dp"/>
+                    <TextView android:textSize="13sp" android:textColor="@color/red" android:gravity="center" android:id="@+id/mycoins_txtCoinsBuy" android:background="@drawable/btn_yellow_selector" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="去充值"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+                    <EditText android:textColorHint="@color/gray_c" android:id="@+id/mymoney_etGiveRemark" android:background="@drawable/line_edittext" android:layout_width="0dp" android:layout_height="33dp" android:layout_marginLeft="5dp" android:hint="添加转账说明" android:layout_weight="1"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_clear"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+                    <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/mymoney_tvGiveEnsure" android:background="@drawable/shape_bgm_coins2" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="70dp" android:layout_marginRight="70dp" android:text="确认转赠"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/mycoins_llySellCoins" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="220dp" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13sp" android:gravity="center" android:background="@drawable/btn_underline_selector" android:layout_width="wrap_content" android:layout_height="44dp" android:text="出售数量"/>
+                    <EditText android:textSize="12sp" android:id="@+id/mycoins_edtSellNum" android:background="@drawable/line_edittext" android:layout_width="150dp" android:layout_height="33dp" android:layout_marginLeft="5dp" android:hint="填写要兑换金豆的数量" android:maxLength="8" android:inputType="number"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13sp" android:gravity="center" android:background="@drawable/btn_underline_selector" android:layout_width="wrap_content" android:layout_height="44dp" android:text="所折现金"/>
+                    <EditText android:enabled="false" android:textColor="@color/red" android:id="@+id/mycoins_edtTogetMoney" android:background="@drawable/line_edittext" android:layout_width="150dp" android:layout_height="33dp" android:layout_marginLeft="5dp" android:text="￥0.00"/>
+                </LinearLayout>
+                <TextView android:textSize="10sp" android:textColor="#fffda06e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="(金币出售将会以现金的方式转入您的钱包余额中)"/>
+                <TextView android:textSize="10sp" android:textColor="#fffda06e" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginBottom="10dp" android:text="折现比例 1:1"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+                    <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/mycoins_txtChangeMoney" android:background="@drawable/shape_bgm_coins2" android:layout_width="match_parent" android:layout_height="44dp" android:text="兑换"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

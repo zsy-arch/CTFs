@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/icon_order_action_bgm" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="52dp">
+                <TextView android:textColor="@color/gray_b" android:id="@+id/order_needs_titleKey" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="需求名称："/>
+                <TextView android:id="@+id/order_needs_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="52dp" android:layout_marginTop="3dp">
+                <TextView android:textColor="@color/gray_b" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="订单编号："/>
+                <TextView android:gravity="center" android:id="@+id/order_needs_no" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/in_divider"/>
+        <com.vsf2f.f2f.ui.view.MyListview android:id="@+id/mlv_trace" android:background="@android:color/white" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0px"/>
+    </LinearLayout>
+</ScrollView>

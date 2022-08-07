@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="63" android:versionName="3.0.4" package="com.vsf2f.f2f" platformBuildVersionCode="26" platformBuildVersionName="8.0.0">
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="26"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.vsf2f.f2f.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.autofocus"/>
+    <permission android:name="com.vsf2f.f2f.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@drawable/app_logo" android:name="com.cdlinglu.common.MyApplication" android:persistent="true" android:allowBackup="true" android:hardwareAccelerated="true" android:supportsRtl="true">
+        <activity android:theme="@style/SplashTheme" android:label="@string/app_name" android:name="com.vsf2f.f2f.ui.LaunchActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alipay.sdk.app.H5PayActivity" android:exported="false" android:screenOrientation="behind" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:name="com.vsf2f.f2f.ui.GuideActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.MainActivity" android:launchMode="singleTask" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.pwd.LoginActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.pwd.RegistActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.pwd.RegistTestActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.UserDataActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.SettingsActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.SettingsNotifyActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.shop.ShopMainActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.circle.ReplyActivity" android:launchMode="singleTask" android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.circle.CircleActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.circle.MyCircleActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.circle.CirclesAddActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.circle.CirclesAddTextActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.circle.CirclesAddPicActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.circle.CirclesAddVideoActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.circle.CirclesAddArtActivity" android:launchMode="singleTop"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.utils.photo.PhotoPickerActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.utils.photo.PhotoPreviewActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.UserAddrActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.change.ChangeInfoActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.UserAddrAddActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.UserVipActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.EnlargeActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.pwd.ResetPwdActivity" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|adjustResize"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.UserFinanceActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.MyCoinsActivity"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.mob.tools.MobUIShell" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.vsf2f.f2f.wxapi.WXEntryActivity" android:exported="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.vsf2f.f2f.wxapi.WXPayEntryActivity" android:exported="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.alipay.sdk.auth.AuthActivity" android:configChanges="keyboardHidden|navigation|orientation"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.tencent.connect.common.AssistActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:name="com.tencent.tauth.AuthActivity" android:launchMode="singleTask" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent1105020594"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.pwd.FindPwdActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.change.ChangeContentActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.change.ChangeSexActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.pwd.ChangePwdActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.circle.CircleDetailActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.photo.AlbumActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.photo.GalleryActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.MySaveActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.MayKnowActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.change.BindAliActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.change.BindPhoneActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.WithdrawalActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.change.ChangeAliActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.AddSaveActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.SaveAndEditActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.PlugActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.WebKitLocalActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.TbsWebActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.shop.ShopFinanceActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.shop.GoodsListActivity" android:launchMode="singleTop"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.shop.ShopManagerActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.pay.PayActivity" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxd930ea5d5a258f4f"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.shop.ShopBusinessActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.shop.GoodsPublishActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.shop.GoodPublishScucessActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.shop.ClassifyActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.shop.GoodsClassifyActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.shop.GoodsSpecActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.shop.DataStatisticsActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.qrcode.QrcodeActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.SearchActivity"/>
+        <activity android:theme="@android:style/Theme.Holo.NoActionBar" android:name="com.vsf2f.f2f.ui.shop.AddDescriptionActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.MyCodeActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.shop.GoodsEditActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.MoneyAccountActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.AddContactActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.BaseActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.BlacklistActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.CallActivity"/>
+        <activity android:theme="@style/MyDialogStyle" android:name="com.em.ui.ContextMenuActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.DiagnoseActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.EditActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.ForwardMessageActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.ForwardCardActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.GroupBlacklistActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.GroupDetailsActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.GroupPickContactsActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.GroupsActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.SubscriptionActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.GroupSearchMessageActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.GroupSimpleDetailActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.ImageGridActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.NewFriendsMsgActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.NewGroupActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.PickMemberActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.PickContactNoCheckboxActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.PublicChatRoomsActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.PublicGroupsActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.PublicGroupsSearchActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.RecorderVideoActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.RobotsActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.SetServersActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.VideoCallActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.VoiceCallActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.map.MapLocationActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.map.NaviWalkActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.easeui.ui.EaseBaseActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.easeui.ui.EaseShowBigImageActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.easeui.ui.EaseShowNormalFileActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.easeui.ui.EaseShowVideoActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.ChatActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.GridPicActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.em.ui.UserProfileActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.UserNeedsActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.UserCommentActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.change.ChangeRemarkActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.PhoneContactsActivity" android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.SendVerifyActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.AboutUsActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.InvitedActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.report.ReportMainActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.report.ReportEditActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.report.ReportSuccessActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.DealDisputeRefundActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.ChoiceCityActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.CommentSuccessActivity" android:launchMode="singleTop" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.CommentOrderActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.EntrustActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.RefundActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.StartServiceActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.ChoiceLocationActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.SearchEditActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.circle.NearbyFriendActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.NearbyDemandActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.NearbyServiceActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.NearbyPeopleActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.NearbyShopActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.DemandOrderActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.NeedsTypeChoiceActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.DemandPublishActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.DemandPublishScucessActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.DemandInfoActivity" android:launchMode="singleTask"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.DemandDetailActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.DemandModifyActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.OrderDetailActivity" android:launchMode="singleTask" android:windowSoftInputMode="stateUnchanged|stateHidden|stateAlwaysHidden|adjustPan"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.OrderActionActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.service.BespeakActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.HelpSuccessActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.ToHelpActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.RefuseRefundActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.MyPublishActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.ChoiceServerActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.service.ServicePublishScucessActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.service.ServicePublishActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.service.ServiceModifyActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.service.ServiceOrderActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.service.ServiceInfoActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.demand.EntrustSuccessActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.NeedsSearchActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.NeedsSearchEndActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.NeedsManagerActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.needs.NeedsSortByTypeActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.identify.IdentifyPayActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.identify.IdentifyActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.identify.IdentityComActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.identify.IdentyIdCardActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.identify.IdentyHeaderActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.identify.BindZhiMaActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.identify.AgreeAuthorByZmActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <data android:scheme="vsf2f" android:host="zhimacallback"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.vsf2f.f2f.fileProvider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <service android:name="com.hyphenate.chat.EMChatService" android:exported="true"/>
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="com.vsf2f.f2f"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="QBSDKAppKey" android:value="yItAdhvzgmzGdFOdTqayJLFK"/>
+        <meta-data android:name="BaiduMobAd_STAT_ID" android:value="c9e5c246eb"/>
+        <meta-data android:name="BaiduMobAd_CHANNEL" android:value="Baidu Market"/>
+        <meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="true"/>
+        <meta-data android:name="BaiduMobAd_SEND_STRATEGY" android:value="APP_START"/>
+        <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="1"/>
+        <meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="false"/>
+        <meta-data android:name="BaiduMobAd_CELL_LOCATION" android:value="true"/>
+        <meta-data android:name="BaiduMobAd_GPS_LOCATION" android:value="true"/>
+        <meta-data android:name="BaiduMobAd_WIFI_LOCATION" android:value="true"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="35fc899aaeb3c6c101f6d00da217b998"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <activity android:label="@string/app_name" android:name="com.vsf2f.f2f.jpush.JPushActivity"/>
+        <activity android:label="@string/app_name" android:name="com.vsf2f.f2f.jpush.PushSetActivity"/>
+        <activity android:label="@string/app_name" android:name="com.vsf2f.f2f.jpush.JPushSettingActivity"/>
+        <activity android:name="com.vsf2f.f2f.jpush.TestActivity">
+            <intent-filter>
+                <action android:name="jpush.testAction"/>
+                <category android:name="jpush.testCategory"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@android:style/Theme.NoTitleBar" android:name="cn.jpush.android.ui.PushActivity" android:exported="false" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.vsf2f.f2f"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/MyDialogStyle" android:name="cn.jpush.android.ui.PopWinActivity" android:exported="false"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.MyCoinsChangeActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.MyBeansActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.MyBeansInfoActivity"/>
+        <activity android:name="com.vsf2f.f2f.wxapi.ShareActivity"/>
+        <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" android:name="com.vsf2f.f2f.ui.otay.OtayActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.packet.RedPacketSendActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.packet.RedPacketSend2Activity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.packet.RedPacketDetailActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.packet.RedPacketRecordActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.MyMoneyGiveActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.MyCoinsGiveActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.UserWalletActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.UserMoneyActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.pay.PayCenterActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.pay.PaySettingActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.MoneyRecordActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.fragment.NeedsActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.fragment.Needs2Activity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.pay.PayPwdFindActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.pay.PayPwdEditActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.pay.PayScucessActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.pay.PayFingerOpenActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.sharing.SharingMainActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.sharing.SharingGiveActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.sharing.SharingSellActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.sharing.SharingBuyActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.sharing.SharingThawActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.sharing.SharingRecordActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.change.UnBindAccountActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.sharing.SharingSetActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.sharing.SharingListActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.pay.PayPwdResetActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.user.HelpCenterActivity"/>
+        <activity android:theme="@style/ActTheme" android:name="com.vsf2f.f2f.ui.sharing.SharingApplyActivity"/>
+        <service android:name="cn.jpush.android.service.DaemonService" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+                <category android:name="com.vsf2f.f2f"/>
+            </intent-filter>
+        </service>
+        <service android:name="cn.jpush.android.service.PushService" android:enabled="true" android:exported="false" android:process=":pushcore">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+        <service android:name="cn.jpush.android.service.DownloadService" android:enabled="true" android:exported="false"/>
+        <receiver android:name="cn.jpush.android.service.PushReceiver" android:enabled="true" android:exported="false" android:process=":pushcore">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="com.vsf2f.f2f"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="false"/>
+        <receiver android:name="com.vsf2f.f2f.jpush.MyReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK"/>
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <category android:name="com.vsf2f.f2f"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.cdlinglu.server.audio.MusicService" android:exported="true"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="5852143c310c9311cf001fca"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="Umeng"/>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="ec164cc7bd71c7298712a6cd"/>
+        <meta-data android:name="EASEMOB_APPKEY" android:value="vsf2f#vsf2fv2"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+    </application>
+</manifest>

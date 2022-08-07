@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/chat_text_date_style"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_chat_activity">
+        <com.hy.frame.view.RotundityImageView android:id="@+id/iv_userhead" android:layout_width="@dimen/size_avatar" android:layout_height="@dimen/size_avatar" android:layout_marginRight="@dimen/margin_chat_activity" android:src="@mipmap/def_head" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <RelativeLayout android:id="@+id/bubble" android:background="@drawable/ease_chatto_bg_redpacket" android:layout_width="210dp" android:layout_height="90dp" android:layout_marginRight="@dimen/margin_chat_activity" android:layout_toLeftOf="@+id/iv_userhead">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_money_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/em_red_packet_icon"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp">
+                    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/tv_money_greeting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@string/red_packet_greeting" android:singleLine="true"/>
+                    <TextView android:textSize="10sp" android:textColor="@color/calculator_white" android:id="@+id/tv_status_str" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="查看红包"/>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="20dp" android:layout_alignParentBottom="true">
+                <TextView android:textSize="12sp" android:textColor="@color/gray_c" android:id="@+id/tv_sponsor_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/mdm_redpacket"/>
+                <TextView android:textSize="12sp" android:textColor="#d24f44" android:id="@+id/tv_packet_type" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@+id/msg_status" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ease_msg_state_failed_resend" android:layout_toLeftOf="@+id/bubble" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12sp" android:id="@+id/tv_ack" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/bubble" android:layout_centerVertical="true" style="@style/chat_text_name_style"/>
+        <TextView android:textSize="12sp" android:id="@+id/tv_delivered" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_delivered_msg" android:layout_toLeftOf="@+id/tv_chatcontent" android:layout_centerVertical="true" style="@style/chat_text_name_style"/>
+        <ProgressBar android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:layout_toLeftOf="@+id/bubble" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:id="@+id/datePicker_value" android:background="@drawable/btn_white_selector_top" android:layout_width="match_parent" android:layout_height="40dp" android:text="0000年00月00日"/>
+        <include layout="@layout/in_divider"/>
+        <DatePicker android:theme="@android:style/Theme.Holo.Light.NoActionBar" android:layout_gravity="center_horizontal" android:id="@+id/datePicker" android:background="@color/gray_f" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:calendarViewShown="false"/>
+        <include layout="@layout/in_divider"/>
+        <TextView android:gravity="center" android:id="@+id/date_picker_ever" android:background="@drawable/btn_white_selector_bottom" android:layout_width="match_parent" android:layout_height="40dp" android:text="长期"/>
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@+id/date_picker_ok" android:background="@drawable/btn_white_selector" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp" android:text="确定"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/base_web_view_header_layout">
+        <RelativeLayout android:id="@+id/base_web_view_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:id="@+id/base_web_view_imgError" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/img_empty_web"/>
+    </RelativeLayout>
+    <ProgressBar android:id="@+id/base_web_view_progressBar" android:layout_width="match_parent" android:layout_height="2dp" android:max="100" android:progress="0" style="?android:attr/progressBarStyleHorizontal"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/base_web_view_header_layout" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="-40dp" android:layout_centerHorizontal="true">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_default" android:layout_toLeftOf="@+id/linearLayout" android:layout_centerVertical="true" android:layout_toStartOf="@+id/linearLayout">
+            <ImageView android:id="@+id/pull_to_refresh_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/refresh_arrow_down_short"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:gravity="center_vertical" android:id="@+id/pull_to_refresh_description" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/pull_to_refresh_pull_label"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

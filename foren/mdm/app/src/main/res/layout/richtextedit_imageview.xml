@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/gray_e" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.vsf2f.f2f.ui.view.richEditor.DataImageView android:id="@+id/edit_imageView" android:layout_width="match_parent" android:layout_height="200dp" android:scaleType="centerCrop"/>
+    <ImageView android:id="@+id/image_close" android:padding="@dimen/margin_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_delete" android:layout_alignParentRight="true"/>
+</RelativeLayout>

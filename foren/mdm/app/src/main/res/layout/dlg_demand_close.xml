@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/shape_bgm_gray_5" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="16sp" android:textColor="@color/black_deep" android:gravity="center" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="选择关闭原因"/>
+    <include layout="@layout/in_divider"/>
+    <com.hy.frame.view.NavGroup android:orientation="vertical" android:id="@+id/ng_close" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp">
+        <com.hy.frame.view.NavView android:id="@+id/nv_1" android:layout_width="match_parent" android:layout_height="wrap_content" app:navHorizontal="true" app:navChecked="true" app:navDrawLeft="@drawable/checkbox_confirm_selector" app:navDrawRightWidth="20dp" app:navText="不需要该需求了" app:navDrawWidth="30dp" style="@style/navDemandStyleNoSe"/>
+        <com.hy.frame.view.NavView android:id="@+id/nv_2" android:layout_width="match_parent" android:layout_height="wrap_content" app:navHorizontal="true" app:navChecked="false" app:navDrawLeft="@drawable/checkbox_confirm_selector" app:navDrawRightWidth="20dp" app:navText="一直找不到合适的服务方" app:navDrawWidth="30dp" style="@style/navDemandStyleNoSe"/>
+        <com.hy.frame.view.NavView android:id="@+id/nv_3" android:layout_width="match_parent" android:layout_height="wrap_content" app:navHorizontal="true" app:navChecked="false" app:navDrawLeft="@drawable/checkbox_confirm_selector" app:navDrawRightWidth="20dp" app:navText="要重新发布订单" app:navDrawWidth="30dp" style="@style/navDemandStyleNoSe"/>
+        <com.hy.frame.view.NavView android:id="@+id/nv_4" android:layout_width="match_parent" android:layout_height="wrap_content" app:navHorizontal="true" app:navChecked="false" app:navDrawLeft="@drawable/checkbox_confirm_selector" app:navDrawRightWidth="20dp" app:navText="其他" app:navDrawWidth="30dp" style="@style/navDemandStyleNoSe"/>
+    </com.hy.frame.view.NavGroup>
+    <include layout="@layout/in_divider"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp">
+        <TextView android:textSize="16sp" android:textColor="@color/demand_sub" android:gravity="center" android:id="@+id/btn_cancel" android:layout_width="0dp" android:layout_height="44dp" android:text="@string/cancel" android:layout_weight="1"/>
+        <View android:background="@color/divider_gray" android:layout_width="1px" android:layout_height="match_parent"/>
+        <TextView android:textSize="16sp" android:textColor="@color/btn_green" android:gravity="center" android:id="@+id/btn_sure" android:layout_width="0dp" android:layout_height="44dp" android:text="@string/ensure" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

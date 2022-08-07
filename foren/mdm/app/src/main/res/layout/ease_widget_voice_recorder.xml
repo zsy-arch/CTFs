@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="@drawable/ease_recording_hint_bg" android:paddingLeft="20dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/mic_image_bgm" android:background="@drawable/ease_record_animate_bgm" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:id="@+id/mic_image" android:background="@drawable/ease_record_animate_01" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/recording_hint" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/move_up_to_cancel"/>
+</LinearLayout>

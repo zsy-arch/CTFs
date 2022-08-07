@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/activity_demand_detail" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/fly_lastPage" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <include layout="@layout/in_divider"/>
+                    <LinearLayout android:orientation="horizontal" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="46dp">
+                        <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="名称"/>
+                        <EditText android:textSize="14sp" android:textColor="@color/gray_b" android:id="@+id/et_title" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:hint="为你发布的服务起一个名字" android:maxLength="30"/>
+                    </LinearLayout>
+                    <include layout="@layout/in_divider"/>
+                    <TextView android:textSize="14sp" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="@dimen/edit_height" android:text="@string/tab_descripe"/>
+                    <include layout="@layout/in_divider"/>
+                    <EditText android:textSize="13sp" android:textColor="@color/gray_b" android:textColorHint="@color/gray_c" android:gravity="top" android:id="@+id/et_describe" android:background="@null" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="100dp" android:hint="@string/service_hint_descripe" android:maxLength="500"/>
+                    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="10dp" android:textColor="@color/txt_red" android:id="@+id/et_describe_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:maxLength="500"/>
+                        <TextView android:textSize="10dp" android:textColor="@color/gray_c" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/500字" android:maxLength="500"/>
+                    </LinearLayout>
+                    <com.hy.frame.view.MyGridView android:id="@+id/mgv_pic" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:horizontalSpacing="3dp" android:verticalSpacing="3dp" android:numColumns="3"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                        <ImageView android:id="@+id/iv_voice" android:paddingRight="15dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_hold_voice"/>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/exist_voice" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                            <com.cdlinglu.server.audio.MusicPlayer android:id="@+id/voicePlayer" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                            <View android:layout_width="0dp" android:layout_height="wrap_content" android:minWidth="20dp" android:layout_weight="1"/>
+                            <ImageView android:id="@+id/clear_voice" android:paddingLeft="20dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_remove_x"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:textSize="10sp" android:textColor="@color/gray_b" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_address" android:clickable="true" android:layout_width="match_parent" android:layout_height="40dp" android:hint="@string/input_address" android:lines="1" android:drawableLeft="@drawable/content_icon_position"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <com.hy.frame.view.KeyValueView android:id="@+id/kv_type" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/service_type" app:kvValueHint="@string/please_select" app:kvValueRight="true" style="@style/settingsKvStyle"/>
+                    <com.hy.frame.view.KeyValueView android:id="@+id/kv_mode" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1px" app:kvKey="服务/共享方式" app:kvValue="线上" app:kvValueRight="true" style="@style/settingsKvStyle"/>
+                    <com.hy.frame.view.KeyValueView android:id="@+id/kv_distance" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1px" app:kvKey="服务/共享范围" app:kvValueHint="@string/please_select" app:kvValueRight="true" style="@style/settingsKvStyle"/>
+                    <com.hy.frame.view.KeyValueView android:id="@+id/kv_state" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1px" app:kvKey="状态" app:kvValueHint="上架" app:kvValueRight="true" style="@style/settingsKvStyle"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="@dimen/edit_height" android:layout_marginTop="1px">
+                        <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_price"/>
+                        <EditText android:textSize="12sp" android:textColor="@color/gray_b" android:textColorHint="@color/gray_d" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_price" android:background="@null" android:paddingRight="30dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:hint="@string/input_price" android:maxLength="8" android:layout_weight="1" android:inputType="numberDecimal"/>
+                        <TextView android:textSize="14sp" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-20dp" android:text="元"/>
+                    </LinearLayout>
+                    <com.hy.frame.view.KeyValueView android:id="@+id/kv_unit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1px" app:kvKey="单位" app:kvValue="次" app:kvValueRight="true" style="@style/settingsKvStyle"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="@dimen/edit_height" android:layout_marginTop="1px">
+                        <TextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="库存"/>
+                        <EditText android:textSize="12sp" android:textColor="@color/gray_b" android:textColorHint="@color/gray_d" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/ed_stock" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:hint="库存数量" android:maxLength="8" android:inputType="number"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <Button android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_commit" android:background="@drawable/btn_red_selector" android:layout_width="120dp" android:layout_height="40dp" android:layout_marginTop="30dp" android:layout_marginBottom="70dp" android:text="@string/check_modify"/>
+            </LinearLayout>
+        </ScrollView>
+        <com.easeui.widget.EaseVoiceRecorderView android:layout_gravity="center" android:id="@+id/voice_recorder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

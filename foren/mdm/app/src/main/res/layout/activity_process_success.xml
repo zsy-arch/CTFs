@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/activity_comment_success" android:background="@color/theme_bg" android:paddingTop="57dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_lanche_scucess"/>
+    <TextView android:textSize="18sp" android:textColor="@color/demand_super" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text=""/>
+    <TextView android:textSize="14sp" android:textColor="@color/demand_super" android:id="@+id/tv_submsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="40dp"/>
+</LinearLayout>

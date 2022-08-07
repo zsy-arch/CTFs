@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_start_service" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/red_packet_page2" android:background="#fff1ea" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="红包金额"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="30sp" android:textStyle="bold" android:textColor="@color/gray_a" android:id="@+id/red_pay_txtMoney" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:background="@color/white" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+            <TextView android:textColor="@color/gray_a" android:layout_width="0dp" android:layout_height="wrap_content" android:text="需支付金额:" android:layout_weight="1"/>
+            <TextView android:textColor="@color/gray_a" android:id="@+id/red_pay_txtMoney2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元"/>
+        </LinearLayout>
+        <include layout="@layout/in_divider"/>
+        <LinearLayout android:background="@color/white" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textColor="@color/blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="钱包余额支付"/>
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <TextView android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可用余额："/>
+                    <TextView android:textStyle="bold" android:textColor="@color/gray_a" android:id="@+id/red_pay_txtMoney3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+                </LinearLayout>
+                <TextView android:id="@+id/red_pay_recharge" android:background="@drawable/btn_yellow_selector" android:paddingLeft="8dp" android:paddingTop="3dp" android:paddingRight="8dp" android:paddingBottom="3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="66dp" android:layout_marginTop="5dp" android:text="去充值"/>
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/checkbox_identycom_selector"/>
+        </LinearLayout>
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_pay" android:background="@drawable/btn_red_selector" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="40dp" android:layout_marginRight="20dp" android:text="确认支付"/>
+    </LinearLayout>
+</FrameLayout>

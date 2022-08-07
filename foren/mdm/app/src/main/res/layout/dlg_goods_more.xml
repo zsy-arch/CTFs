@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/dlg_llyShare" android:background="@color/white" android:paddingRight="@dimen/margin_default" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:id="@+id/textView3" android:paddingLeft="@dimen/margin_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_default" android:layout_marginBottom="@dimen/margin_default" android:text="分享到" android:drawableLeft="@drawable/icon_circles_share" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="center" android:id="@+id/dlg_imgShareCircle" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_share_circle"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/dlg_imgShareWechat" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_share_wechat"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/dlg_imgShareQQfd" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_share_qq"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/dlg_imgShareQzone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <ImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_share_qzone"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/in_divider"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/dlg_llyLook" android:padding="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_preview"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="预览"/>
+    </LinearLayout>
+    <include layout="@layout/in_divider"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/dlg_llyChange" android:padding="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/dlg_imgChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_putaway"/>
+        <TextView android:id="@+id/dlg_txtChange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下架"/>
+    </LinearLayout>
+    <include layout="@layout/in_divider"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/dlg_llyRecommend" android:padding="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_favorite_grey"/>
+        <TextView android:id="@+id/dlg_txtRecom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="推荐"/>
+    </LinearLayout>
+    <include layout="@layout/in_divider"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/dlg_llyEdit" android:padding="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ico_edit"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="编辑"/>
+    </LinearLayout>
+    <include layout="@layout/in_divider"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/dlg_llyDel" android:padding="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/edit_del"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除"/>
+    </LinearLayout>
+    <include layout="@layout/in_divider"/>
+    <TextView android:textColor="@color/blue" android:gravity="center" android:id="@+id/txt_cancle" android:padding="@dimen/margin_default" android:layout_width="match_parent" android:layout_height="match_parent" android:text="取消"/>
+</LinearLayout>

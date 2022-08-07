@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/lly_parent" android:background="@drawable/color_comment_selector" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="12sp" android:textColor="@color/gray_a" android:id="@+id/circles_txtContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="评论"/>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.hy.frame.view.NavView android:id="@+id/pay_nvType" android:background="@drawable/btn_bottom_selector" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" app:navHorizontal="true" app:navDrawRight="@mipmap/ico_next" app:navText="@string/aliPay" app:navDraw="@drawable/icon_pay_ali2" app:navDrawPadding="5dp"/>
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <TextView android:textSize="15sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="提现金额"/>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/shape_edit_line_green" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="￥"/>
+                <EditText android:textSize="40sp" android:textStyle="bold" android:textColorHighlight="@color/green" android:gravity="center_vertical" android:id="@+id/withdrawal_editAmount" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLength="7" android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="30dp">
+                <TextView android:textColor="@color/gray_b" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="可提现金额 "/>
+                <TextView android:textColor="@color/gray_b" android:layout_gravity="center" android:id="@+id/withdrawal_txtBalance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0"/>
+                <TextView android:textColor="@color/blue" android:layout_gravity="center" android:id="@+id/withdrawal_txtAll" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:text="全部提现"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="@dimen/padding_normal">
+            <TextView android:textColor="@color/gray_b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="若未"/>
+            <TextView android:textColor="@color/blue" android:id="@+id/txt_pswreset" android:paddingTop="@dimen/margin_normal" android:paddingBottom="@dimen/margin_normal" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="设置"/>
+            <TextView android:textColor="@color/gray_b" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="过支付密码,默认为注册时填写的登录密码"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/txt_default" android:textColor="@color/gray_b" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:text="@string/payment_date"/>
+        <TextView android:textSize="@dimen/txt_default" android:textColor="@color/txt_red_finace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="6dp" android:text="@string/payment_date2"/>
+        <Button android:textColor="@color/white" android:id="@+id/withdrawal_btnCommit" android:background="@drawable/btn_red_selector" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:text="提现"/>
+    </LinearLayout>
+</ScrollView>

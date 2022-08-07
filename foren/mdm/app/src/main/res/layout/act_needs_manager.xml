@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/gray_e" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.hy.frame.view.NavView android:id="@+id/myneeds_navDemand" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp" app:navText="我发布的需求" style="@style/mineTabNextStyle"/>
+        <com.hy.frame.view.NavView android:id="@+id/myneeds_navService" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="1px" app:navText="我发布的服务" style="@style/mineTabNextStyle"/>
+        <com.hy.frame.view.NavView android:id="@+id/myneeds_navDemandOrder" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp" app:navText="需求订单" style="@style/mineTabNextStyle"/>
+        <com.hy.frame.view.NavView android:id="@+id/myneeds_navServiceOrder" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="1px" app:navText="服务订单" style="@style/mineTabNextStyle"/>
+        <com.hy.frame.view.NavView android:id="@+id/myneeds_navShopManager" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp" app:navText="店铺管理" style="@style/mineTabNextStyle"/>
+        <com.hy.frame.view.NavView android:id="@+id/myneeds_navShopOrder" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="1px" app:navText="我的购物订单" style="@style/mineTabNextStyle"/>
+    </LinearLayout>
+</LinearLayout>

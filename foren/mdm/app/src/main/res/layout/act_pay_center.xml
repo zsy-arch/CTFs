@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.hy.frame.view.KeyValueView android:id="@+id/pay_center_kvRecord" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="提现记录" app:kvValueRight="true" style="@style/settingsKvStyle"/>
+    <include layout="@layout/in_divider"/>
+    <com.hy.frame.view.KeyValueView android:id="@+id/pay_center_kvManager" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="支付管理" app:kvValueRight="true" style="@style/settingsKvStyle"/>
+    <include layout="@layout/in_divider"/>
+    <com.hy.frame.view.KeyValueView android:id="@+id/pay_center_kvWithManager" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="@string/capital_account" app:kvValueRight="true" style="@style/settingsKvStyle"/>
+</LinearLayout>

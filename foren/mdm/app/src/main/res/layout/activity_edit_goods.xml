@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/kv_height" style="@style/publishGoodsTv">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/goods_pic"/>
+            <TextView android:textColor="@color/txt_red_finace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(上传你的宝贝展示图，最多9张)"/>
+        </LinearLayout>
+        <FrameLayout android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:paddingRight="@dimen/margin_normal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.hy.frame.view.MyGridView android:id="@+id/gridView_edit_goods" android:background="@color/white" android:padding="@dimen/padding_normal" android:paddingTop="2dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:horizontalSpacing="3dp" android:verticalSpacing="3dp" android:numColumns="3"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/kv_height" android:layout_marginTop="5dp">
+                <TextView android:textSize="@dimen/txt_default" android:textColor="@color/txt_black" android:gravity="center_vertical" android:background="@color/white" android:paddingLeft="@dimen/margin_normal" android:layout_width="100dp" android:layout_height="match_parent" android:text="@string/category"/>
+                <com.hy.frame.view.KeyValueView android:id="@+id/kv_select_goods_type_edit" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:kvKey="" style="@style/contentKvStyle"/>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="@dimen/kv_height" android:layout_marginTop="1px" android:text="@string/goods_name" style="@style/publishGoodsTv"/>
+            <EditText android:id="@+id/et_goods_name_eidt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/kv_height" android:layout_marginTop="1px" android:hint="@string/byte_20" android:maxLength="20" style="@style/publishGoodsEt"/>
+            <TextView android:layout_width="match_parent" android:layout_height="@dimen/kv_height" android:layout_marginTop="1px" android:text="@string/goods_tip" style="@style/publishGoodsTv"/>
+            <EditText android:id="@+id/et_goods_description_edit" android:background="@color/gray_f" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/kv_height" android:hint="@string/enter_tip" android:minLines="2" android:maxLength="200" style="@style/publishGoodsEt"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/kv_height" android:layout_marginTop="5dp">
+                <TextView android:layout_width="100dp" android:layout_height="match_parent" android:text="@string/price" style="@style/publishGoodsTv"/>
+                <EditText android:id="@+id/et_goods_price_edit" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/enter_price" android:singleLine="true" android:inputType="numberDecimal" style="@style/publishGoodsEt"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/kv_height" android:layout_marginTop="1px">
+                <TextView android:layout_width="100dp" android:layout_height="match_parent" android:text="@string/stock" style="@style/publishGoodsTv"/>
+                <EditText android:id="@+id/et_store_num_edit" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/enter_store" android:singleLine="true" android:maxLength="5" android:inputType="number" style="@style/publishGoodsEt"/>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="@dimen/kv_height" android:layout_marginTop="5dp" android:text="@string/for_sales_money" style="@style/publishGoodsTv"/>
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/kv_height" android:layout_marginTop="1px">
+                <TextView android:textColor="@color/gray_b" android:gravity="center_vertical" android:paddingLeft="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="销售让利(百分比%)" android:layout_weight="1"/>
+                <Spinner android:entries="@array/for_sale_array" android:id="@+id/sp_for_sale_eidt" android:background="@color/white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/kv_height" android:layout_marginTop="5dp">
+                <TextView android:layout_width="100dp" android:layout_height="match_parent" android:text="@string/add_carriage" style="@style/publishGoodsTv"/>
+                <EditText android:id="@+id/et_carriage_edit" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/enter_carriage" android:singleLine="true" android:maxLength="3" android:inputType="numberDecimal" style="@style/publishGoodsEt"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/kv_height" android:layout_marginTop="5dp">
+                <TextView android:layout_width="100dp" android:layout_height="match_parent" android:text="@string/post_shop" style="@style/publishGoodsTv"/>
+                <com.hy.frame.view.KeyValueView android:id="@+id/kv_post_shop_edit" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" app:kvKey="@string/select_shop" style="@style/contentKvStyle"/>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="@dimen/kv_height" android:layout_marginTop="5dp" android:text="@string/voucher" style="@style/publishGoodsTv"/>
+            <EditText android:id="@+id/et_voucher_edit" android:layout_width="match_parent" android:layout_height="@dimen/kv_height" android:layout_marginTop="1px" android:hint="@string/enter_voucher" android:inputType="number" style="@style/publishGoodsEt"/>
+            <View android:background="@color/divider_gray" android:layout_width="match_parent" android:layout_height="5dp"/>
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.hy.frame.view.KeyValueView android:id="@+id/kv_add_type_edit" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/kv_height" app:kvKey="@string/edit_goods_type" style="@style/settingsKvStyle"/>
+                <View android:background="@color/divider_gray" android:layout_width="match_parent" android:layout_height="5dp"/>
+                <com.hy.frame.view.KeyValueView android:id="@+id/kv_add_detail_edit" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/kv_height" app:kvKey="@string/edit_tip" style="@style/settingsKvStyle"/>
+                <View android:background="@color/divider_gray" android:layout_width="match_parent" android:layout_height="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/gray_f" android:layout_width="match_parent" android:layout_height="@dimen/height_row_weixin">
+            <TextView android:textSize="@dimen/txt_big" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_edit_goods" android:background="@color/red" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/confirm_edit" android:layout_weight="1" style="@style/txtDefaultStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
