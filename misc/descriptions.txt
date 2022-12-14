@@ -1,0 +1,5 @@
+ezEforensics：
+len('flag{*}')=33
+
+dump_io：
+最近，公司内网防火墙报警有sql注入漏洞，我们拿到了一部分的web服务器日志，请分析日志，获取flag。
